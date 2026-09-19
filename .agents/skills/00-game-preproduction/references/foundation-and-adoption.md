@@ -1,0 +1,30 @@
+# Establishing a foundation and recovering existing intent
+
+Use these branches within stage 01 according to the game's actual state. First read the [profile](project-profile.md), assignment, and available materials. Preserve an agreed concept; explore alternatives only for unresolved questions or an authorized revision. This work clarifies D0 documentation and does not start implementation.
+
+## When the concept is missing or too broad
+
+1. Extract known preferences and constraints: player experience, core actions, audience and game familiarity, play conditions and session length, team resources, and assignment boundaries. Make references to favorite games specific: which quality to adopt, what to distinguish, and why. Mark unknowns and ask only questions that change the next significant decision; a lengthy interview is not mandatory.
+2. If direction remains open, offer a small set of meaningfully different options. Useful methods include starting from a core player verb, tracing desired experience to player behavior and supporting rules, or combining theme and mechanics with an explanation of the result. These are exploration tools, not requirements for a new genre or mandatory uniqueness.
+3. For each option, show a clear “action → consequence → new choice” loop, intended experience and audience, differences from alternatives, expected work, and the main untested assumption. Compare against the user's goals and constraints. MDA, motivation models, and examples may help formulate questions; they do not prove enjoyment, demand, or universal psychological norms. Verify factual market claims against sources when needed.
+4. Refer a significant new choice that cannot be inferred from the assignment to the decision owner, with a recommendation and consequences; continue independent work. Record the accepted direction, rationale, and meaningful rejected alternatives. Do not replace the full agreed product with a minimal prototype. An early check may have a smaller scope while preserving the explicit remainder and its future-work status.
+5. State design principles through concrete choices: the quality being protected, a plausible choice that supports it, and a choice that violates it. Show consequences for applicable mechanics, interface, visuals, audio, and narrative. If principles conflict, record a priority or resolution rule and its rationale; return an incompatible foundation to the decision owner. There is no fixed number of principles, but each must serve a practical purpose.
+6. Record a sufficient foundation in existing or minimal `brief`/`baseline`/`scope` sources using the [artifact contracts](templates.md): selected experience, loop, principles and exclusions, constraints, criteria, decision sources, and open questions. For qualities that documents cannot yet establish, specify a hypothesis, future verification method/timing, and consequences of failure. Hand the map to stage 02 and foundation checks to 03/04; a playtest plan cannot conceal a missing mandatory rule.
+
+## When code, data, or experiments exist without sufficient documentation
+
+1. Bound reconstruction by actual files and their dependencies. Read the supplied implementation, data, prototype notes, and reports; record paths, sections/symbols, revisions, and unread material. Use available inspection tools under the environment's rules. Reconstruction does not require creating or running a prototype, changing game code, or declaring the current implementation canonical.
+2. Extract observable rules, values/formulas, states and transitions, inputs/outputs, ownership, persistence, and edge cases within scope. Static analysis shows what available code prescribes; it does not establish a successful run. Keep these categories separate:
+
+   | Record type | Required basis |
+   |---|---|
+   | Behavior visible in source code or data | Exact source and limits of static analysis. |
+   | Actual experimental observation | Original note/artifact, version, conditions, and method. |
+   | Inferred purpose | Explicit inference label and rationale; this is not yet the game author's decision. |
+   | Confirmed intent or required change | Assignment, accepted document, or decision owner's response. |
+
+3. For an earlier experiment, preserve its original question, method, tested scope and fidelity, observation conditions, actual result, limitations, and conclusions: what to keep, change, and check next. Code, video, “prototype complete,” or file counts alone do not establish balance, enjoyment, or production suitability. Do not invent missing results, hours, or feedback.
+4. Compare findings with the current baseline. Distinguish handled behavior, unsupported cases, defects relative to an accepted rule, and unknown intent. Do not infer the author's motive from code structure. Leave significant unknown reasons open; ask when the answer changes a mandatory contract. Describe proposed fixes separately from existing behavior.
+5. Restore or extend one canonical source with provenance, status, and verifiable gaps. Preserve IDs and history. Send gameplay rules to 06, architecture contracts to 12/13, and observations and future checks to 19; propagate changes to accepted behavior through 16. The handed-off specification must distinguish current, required, and unverified behavior. Original notes remain evidence; a summary does not become another normative copy.
+
+Method sources: CCGS [brainstorm](https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/brainstorm/SKILL.md), [game-pillars](https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-pillars.md), and [reverse-document](https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/reverse-document/SKILL.md). Adaptation is limited to D0 methods; source commands, models, mandatory interviews, and execution stages are not adopted.

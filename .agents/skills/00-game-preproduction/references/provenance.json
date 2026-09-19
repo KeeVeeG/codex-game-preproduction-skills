@@ -1,0 +1,2992 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+  "source_commit": "984023ddac0d5e27624f2baacde6105e45de375f",
+  "license": "MIT",
+  "note": "Method lineage retained from the source package. Archived hashes refer to the pinned upstream snapshot; they are not fresh verification of remote files or a claim of textual equivalence. This English edition uses independent Codex subagent review.",
+  "skills": [
+    {
+      "skill": "00-game-preproduction",
+      "role": "orchestrator",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/creative-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/creative-director.md",
+          "archived_sha256": "00b9dc2b494b5feeefa5203fdefbd9bd9a4789a23ed2d192898b5ef84036b966"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/agent-coordination-map.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/agent-coordination-map.md",
+          "archived_sha256": "d7f7e131f52fa7fa6c5d801140aa950b6a221d4e0045d36a52c2e521ba4092f5"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/agent-roster.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/agent-roster.md",
+          "archived_sha256": "040a30001336e11fb29d1cb15e6af27db40b34137129d25c354844d141e2a5fb"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/CLAUDE-local-template.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/CLAUDE-local-template.md",
+          "archived_sha256": "18158b03f609cafb3abdef3f70f21f3ee4aefc2c8d5c7df623d9f46c7f9db435"
+        },
+        {
+          "category": "reference",
+          "source_path": "CLAUDE.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/CLAUDE.md",
+          "archived_sha256": "a734e23d0c54f90bfdf9aab3b770ae18ce94eaec6747700c66bbc502ad149578"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/context-management.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/context-management.md",
+          "archived_sha256": "6a2d81f39c23d6a20c51cf684611b38fa1b5b5755b55ce0177b3cb8b0db739a8"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coordination-rules.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coordination-rules.md",
+          "archived_sha256": "8998fa2d5dd464940f44bdeb24a6fad9c4531f958189ef88422f211666f91538"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/director-gates.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/director-gates.md",
+          "archived_sha256": "980605102b90a296c014c4ab00d80dbf0da252d9756d398e065f21e440f02ba0"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/directory-structure.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/directory-structure.md",
+          "archived_sha256": "2f9d3a744c163197f26a34282f0e212745a8bf9e6b657b7f37793462bc4a2cbc"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/hooks-reference.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/hooks-reference.md",
+          "archived_sha256": "0dffe735cdf99142840089986bbceabb511d39bfcfe842a87248c3777d18c1ac"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/quick-start.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/quick-start.md",
+          "archived_sha256": "e3ed70fe2529e06d81d4859428ed3b1eaad9be0d35ae10046c45777529f7224a"
+        },
+        {
+          "category": "reference",
+          "source_path": "README.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/README.md",
+          "archived_sha256": "bb7abcaee0447d4f812d643240eb7796b6ef2038099504476675d5ff0baa3d96"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/settings-local-template.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/settings-local-template.md",
+          "archived_sha256": "6bc44902a74c96329a321ce5408fac33f548db3010c54fd9c20189542e209197"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/setup-requirements.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/setup-requirements.md",
+          "archived_sha256": "5b5ee827bb7990628cae31ace1af7cb852ba04289bc41a551c69091737280d4d"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/skills-reference.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/skills-reference.md",
+          "archived_sha256": "f1ab09e790e580447843310332477f3767b6d5792d9b5cdfbf8c179aa8b765cf"
+        },
+        {
+          "category": "reference",
+          "source_path": "UPGRADING.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/UPGRADING.md",
+          "archived_sha256": "f502c533d1eb6d7916667b9f7b72a7eabd7e1259eb6f615efa70c8d2df607f66"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/workflow-catalog.yaml",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/workflow-catalog.yaml",
+          "archived_sha256": "1c5a5725575c4887bc1bb7042a80a9842f52c0771978888ee1503a1c84791ede"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/help/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/help/SKILL.md",
+          "archived_sha256": "9519e9b275a58b3d45391f1fc47e6f8ac1a469e468959cccf6f37bd13e71ee04"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/onboard/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/onboard/SKILL.md",
+          "archived_sha256": "fbf7f691226e4c5fccbfa40423d61d123f3e0088d36b719663cca40e96a5d6d7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/sprint-status/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/sprint-status/SKILL.md",
+          "archived_sha256": "58b80b7ee9a31eb4798f0700b4054fd705b1d6642eb63cead4166d3ffbe6f138"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/start/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/start/SKILL.md",
+          "archived_sha256": "31e7a2cee0568de6e443fd3428fea36f6583478f6db25cac3fa18604c510af9f"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/collaborative-protocols/design-agent-protocol.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/collaborative-protocols/design-agent-protocol.md",
+          "archived_sha256": "c5c778e3d9ecb80d224944510c67be99861f9f96b4ac07f6660d06e6e0a971e4"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "archived_sha256": "e1fbc30461f18c4ff5f018cdaf04dc868c47e4aa54da79a26885aaba7081e57b"
+        }
+      ]
+    },
+    {
+      "skill": "01-game-project-stage-detect",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/directory-structure.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/directory-structure.md",
+          "archived_sha256": "2f9d3a744c163197f26a34282f0e212745a8bf9e6b657b7f37793462bc4a2cbc"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/quick-start.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/quick-start.md",
+          "archived_sha256": "e3ed70fe2529e06d81d4859428ed3b1eaad9be0d35ae10046c45777529f7224a"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/technical-preferences.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/technical-preferences.md",
+          "archived_sha256": "9cec7b291a839926efd43e2b7eca7d9443397e157b09b2322c87b3e47623eb99"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/adopt/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/adopt/SKILL.md",
+          "archived_sha256": "58959c4f76c05fbe3fd60b7a7d2c4ba5bf861fce28c0da49a498a81656b6a05e"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/help/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/help/SKILL.md",
+          "archived_sha256": "9519e9b275a58b3d45391f1fc47e6f8ac1a469e468959cccf6f37bd13e71ee04"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/project-stage-detect/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/project-stage-detect/SKILL.md",
+          "archived_sha256": "dffa5112b8d3c4ef53bc3ee6bede90d0f3f4b938ad3a00238f1209f0fa0e7e19"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/reverse-document/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/reverse-document/SKILL.md",
+          "archived_sha256": "71d5beda61de4815f52bb63b38780f55f890db6dd8c5d22842b1b179fb393876"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/start/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/start/SKILL.md",
+          "archived_sha256": "31e7a2cee0568de6e443fd3428fea36f6583478f6db25cac3fa18604c510af9f"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/design-doc-from-implementation.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/design-doc-from-implementation.md",
+          "archived_sha256": "4c93e09ef73f0e5dec142eb442537f1deee2960c56890d2163a7ab4c516c0501"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/project-stage-report.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/project-stage-report.md",
+          "archived_sha256": "b78afb205a473f5ab30e6c0c0d4db20a1be907d4d3d38b72ed19a5dc73c8ba8e"
+        }
+      ]
+    },
+    {
+      "skill": "02-game-map-systems",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/game-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/game-designer.md",
+          "archived_sha256": "a1b4fb4f1466b69140a23f8e12d3a5eba624d2a6318da32e2b755e471d41584f"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/systems-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/systems-designer.md",
+          "archived_sha256": "b12973f4dce65c5add8e31fc570c4ece2b6f9855d2c89ce1645c0901a14adc17"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/agent-coordination-map.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/agent-coordination-map.md",
+          "archived_sha256": "d7f7e131f52fa7fa6c5d801140aa950b6a221d4e0045d36a52c2e521ba4092f5"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/content-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/content-audit/SKILL.md",
+          "archived_sha256": "6e17272fe8854e93936f55076d88435f3af2226d4e05d0b8b5f987296f00d8ab"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/map-systems/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/map-systems/SKILL.md",
+          "archived_sha256": "a46393797f5227603d87722d8c546d61c8944182db28e00207dc5ad318aa577e"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/systems-index.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/systems-index.md",
+          "archived_sha256": "3c474f75f71d12c3175b7be58013f58f615f316ba8fa8533ebb94197c85634c1"
+        }
+      ]
+    },
+    {
+      "skill": "03-game-scope-check",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/creative-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/creative-director.md",
+          "archived_sha256": "00b9dc2b494b5feeefa5203fdefbd9bd9a4789a23ed2d192898b5ef84036b966"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/producer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/producer.md",
+          "archived_sha256": "05f8bf426001cbd07ca9ca40dde0348139e208f97af7d87abcfecf8ca84c3257"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/adopt/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/adopt/SKILL.md",
+          "archived_sha256": "58959c4f76c05fbe3fd60b7a7d2c4ba5bf861fce28c0da49a498a81656b6a05e"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/brainstorm/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/brainstorm/SKILL.md",
+          "archived_sha256": "3afbcc808948bd507486d2d84787236cbac516b67d207b6b4737ab0d7f2cd9ad"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/project-stage-detect/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/project-stage-detect/SKILL.md",
+          "archived_sha256": "dffa5112b8d3c4ef53bc3ee6bede90d0f3f4b938ad3a00238f1209f0fa0e7e19"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/scope-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/scope-check/SKILL.md",
+          "archived_sha256": "f91150df11aadf32cfa64a1476c608396e12eeeba9aca03836c52299f3a0efa0"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/start/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/start/SKILL.md",
+          "archived_sha256": "31e7a2cee0568de6e443fd3428fea36f6583478f6db25cac3fa18604c510af9f"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/collaborative-protocols/design-agent-protocol.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/collaborative-protocols/design-agent-protocol.md",
+          "archived_sha256": "c5c778e3d9ecb80d224944510c67be99861f9f96b4ac07f6660d06e6e0a971e4"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "archived_sha256": "e1fbc30461f18c4ff5f018cdaf04dc868c47e4aa54da79a26885aaba7081e57b"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/game-concept.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-concept.md",
+          "archived_sha256": "fa94f05c71decac7183be449c87767acd99db822f05701121f45f5a5e2251156"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        }
+      ]
+    },
+    {
+      "skill": "04-game-review-all-gdds",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/creative-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/creative-director.md",
+          "archived_sha256": "00b9dc2b494b5feeefa5203fdefbd9bd9a4789a23ed2d192898b5ef84036b966"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/game-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/game-designer.md",
+          "archived_sha256": "a1b4fb4f1466b69140a23f8e12d3a5eba624d2a6318da32e2b755e471d41584f"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/narrative-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/narrative-director.md",
+          "archived_sha256": "2a1b23c70ae19182eac9c55eddfb3c98d1abca26633028281db555d0bfd101f1"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/director-gates.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/director-gates.md",
+          "archived_sha256": "980605102b90a296c014c4ab00d80dbf0da252d9756d398e065f21e440f02ba0"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/review-workflow.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/review-workflow.md",
+          "archived_sha256": "5473fff8fd07ed08d9c6c918a251fab3a253ee89c6a99ed208a835146aa134c7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/design-docs.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/design-docs.md",
+          "archived_sha256": "8e3ea21cd637f39b2fbca4ec1d660c97e0143f1b211466c7b03cf6447a59bfb4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/brainstorm/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/brainstorm/SKILL.md",
+          "archived_sha256": "3afbcc808948bd507486d2d84787236cbac516b67d207b6b4737ab0d7f2cd9ad"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/design-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/design-review/SKILL.md",
+          "archived_sha256": "3f9119c2ecc3f1b8a07484f0df9e3547bb006df349d9a73c97e8a95799aadfa9"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/design-system/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/design-system/SKILL.md",
+          "archived_sha256": "eae2be7d9ae520112020420293d83fdeeebf52d3476ce5c8ffecf87aaec4e696"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/review-all-gdds/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/review-all-gdds/SKILL.md",
+          "archived_sha256": "016dce629603f89c923cf6ca5b7f4cae4d4e5920c04ced00b7d3bb206a531a2d"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-narrative/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-narrative/SKILL.md",
+          "archived_sha256": "9959626482ed8607f8a93a7fcf2c3d03546621592784d56a22b70cfe387ca0d4"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/difficulty-curve.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/difficulty-curve.md",
+          "archived_sha256": "3aeaa80aa5152065bb5dd641838d98efcb9ec651293a4831e32a0c823199ab18"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/game-concept.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-concept.md",
+          "archived_sha256": "fa94f05c71decac7183be449c87767acd99db822f05701121f45f5a5e2251156"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/game-design-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-design-document.md",
+          "archived_sha256": "c7a3665d1a47d25c4224bb9d19dc15a0e609594d8ed8841347822fd9d1b0aaec"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/game-pillars.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-pillars.md",
+          "archived_sha256": "3603610be7704cdee1c421813cd248ce07a410969dc3416aa2b9e4959801d3c8"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/player-journey.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/player-journey.md",
+          "archived_sha256": "786d45beef8e3e9444dfa0f22904ec3d09f4fad433c015a509b206f4d1be3324"
+        }
+      ]
+    },
+    {
+      "skill": "05-game-consistency-check",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/systems-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/systems-designer.md",
+          "archived_sha256": "b12973f4dce65c5add8e31fc570c4ece2b6f9855d2c89ce1645c0901a14adc17"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/data-files.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/data-files.md",
+          "archived_sha256": "bbc65708e00a98e18278c8331fd4f69ad261a6fdc15cbbb3a96815d0800dab9d"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/design-docs.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/design-docs.md",
+          "archived_sha256": "8e3ea21cd637f39b2fbca4ec1d660c97e0143f1b211466c7b03cf6447a59bfb4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/consistency-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/consistency-check/SKILL.md",
+          "archived_sha256": "a6a87d4512c9bc3c0dd03b5551f438770259345c8802ec6247f7455e85a20e77"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/design-system/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/design-system/SKILL.md",
+          "archived_sha256": "eae2be7d9ae520112020420293d83fdeeebf52d3476ce5c8ffecf87aaec4e696"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/quick-design/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/quick-design/SKILL.md",
+          "archived_sha256": "e1274daaef2d2f925bc98944013e9ec31c25e4ad0906345fda744a7a59271d7a"
+        }
+      ]
+    },
+    {
+      "skill": "06-game-design-system",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/economy-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/economy-designer.md",
+          "archived_sha256": "523d9faf11dfe6581df5fa3248c4a3d43b8d284715502c868cb8e796fd55eae0"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/game-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/game-designer.md",
+          "archived_sha256": "a1b4fb4f1466b69140a23f8e12d3a5eba624d2a6318da32e2b755e471d41584f"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/prototyper.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/prototyper.md",
+          "archived_sha256": "c1fa09ea15b0bfb532098bc6ee24ebb998570ed7eb6cff5f3f4c4456f09ff956"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/systems-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/systems-designer.md",
+          "archived_sha256": "b12973f4dce65c5add8e31fc570c4ece2b6f9855d2c89ce1645c0901a14adc17"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coding-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coding-standards.md",
+          "archived_sha256": "4a14405e5db07efd49aaca9a38485aa428ad7ff6853b213dc21d00a59778d865"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/rules-reference.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/rules-reference.md",
+          "archived_sha256": "b7ad52ed59399af127b4e8e65d02c59ad67fe856a57eac4d9ff240d6fa2e8d68"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ai-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ai-code.md",
+          "archived_sha256": "0b2ed79ed959c24262ca1b7ae353a78d574019d64eca040293753e165c5adb21"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/design-docs.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/design-docs.md",
+          "archived_sha256": "8e3ea21cd637f39b2fbca4ec1d660c97e0143f1b211466c7b03cf6447a59bfb4"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/gameplay-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/gameplay-code.md",
+          "archived_sha256": "94030c94f9f39c669f9292a0e1ab57a8d6fd53d1353485202713c2465098606c"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/brainstorm/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/brainstorm/SKILL.md",
+          "archived_sha256": "3afbcc808948bd507486d2d84787236cbac516b67d207b6b4737ab0d7f2cd9ad"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/design-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/design-review/SKILL.md",
+          "archived_sha256": "3f9119c2ecc3f1b8a07484f0df9e3547bb006df349d9a73c97e8a95799aadfa9"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/design-system/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/design-system/SKILL.md",
+          "archived_sha256": "eae2be7d9ae520112020420293d83fdeeebf52d3476ce5c8ffecf87aaec4e696"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/prototype/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/prototype/SKILL.md",
+          "archived_sha256": "d9475f988c6ec1bb676ab5d8149ef7b7321e63a6b4eb7f7194cfd598be1255de"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/quick-design/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/quick-design/SKILL.md",
+          "archived_sha256": "e1274daaef2d2f925bc98944013e9ec31c25e4ad0906345fda744a7a59271d7a"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/design-doc-from-implementation.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/design-doc-from-implementation.md",
+          "archived_sha256": "4c93e09ef73f0e5dec142eb442537f1deee2960c56890d2163a7ab4c516c0501"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/economy-model.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/economy-model.md",
+          "archived_sha256": "22af6a9df657a17e8155a6130d04a8ce04c095e5dcb7ad5c2648449013b35a58"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/game-concept.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-concept.md",
+          "archived_sha256": "fa94f05c71decac7183be449c87767acd99db822f05701121f45f5a5e2251156"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/game-design-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-design-document.md",
+          "archived_sha256": "c7a3665d1a47d25c4224bb9d19dc15a0e609594d8ed8841347822fd9d1b0aaec"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/game-pillars.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/game-pillars.md",
+          "archived_sha256": "3603610be7704cdee1c421813cd248ce07a410969dc3416aa2b9e4959801d3c8"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        }
+      ]
+    },
+    {
+      "skill": "07-game-balance-check",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/economy-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/economy-designer.md",
+          "archived_sha256": "523d9faf11dfe6581df5fa3248c4a3d43b8d284715502c868cb8e796fd55eae0"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/game-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/game-designer.md",
+          "archived_sha256": "a1b4fb4f1466b69140a23f8e12d3a5eba624d2a6318da32e2b755e471d41584f"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/prototyper.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/prototyper.md",
+          "archived_sha256": "c1fa09ea15b0bfb532098bc6ee24ebb998570ed7eb6cff5f3f4c4456f09ff956"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/systems-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/systems-designer.md",
+          "archived_sha256": "b12973f4dce65c5add8e31fc570c4ece2b6f9855d2c89ce1645c0901a14adc17"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/balance-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/balance-check/SKILL.md",
+          "archived_sha256": "c668fe38534a60c5ec3b86130461bf370c49593c82e93fecc4987571a7ef1bba"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/design-system/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/design-system/SKILL.md",
+          "archived_sha256": "eae2be7d9ae520112020420293d83fdeeebf52d3476ce5c8ffecf87aaec4e696"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/prototype/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/prototype/SKILL.md",
+          "archived_sha256": "d9475f988c6ec1bb676ab5d8149ef7b7321e63a6b4eb7f7194cfd598be1255de"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/difficulty-curve.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/difficulty-curve.md",
+          "archived_sha256": "3aeaa80aa5152065bb5dd641838d98efcb9ec651293a4831e32a0c823199ab18"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/economy-model.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/economy-model.md",
+          "archived_sha256": "22af6a9df657a17e8155a6130d04a8ce04c095e5dcb7ad5c2648449013b35a58"
+        }
+      ]
+    },
+    {
+      "skill": "07a-game-narrative-design",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/creative-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/creative-director.md",
+          "archived_sha256": "00b9dc2b494b5feeefa5203fdefbd9bd9a4789a23ed2d192898b5ef84036b966"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/game-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/game-designer.md",
+          "archived_sha256": "a1b4fb4f1466b69140a23f8e12d3a5eba624d2a6318da32e2b755e471d41584f"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/narrative-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/narrative-director.md",
+          "archived_sha256": "2a1b23c70ae19182eac9c55eddfb3c98d1abca26633028281db555d0bfd101f1"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ux-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ux-designer.md",
+          "archived_sha256": "5dc3ec82ef7b401074bc7d87d89dd1507b59c465b84145cb10317ad55d77e567"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/world-builder.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/world-builder.md",
+          "archived_sha256": "9e3399c5478ea2491bfc8e42745948b7aec4c2045ecd008a318d4f72a8fad2ea"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/writer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/writer.md",
+          "archived_sha256": "8eafe2f3cd7f2c12acc0d8f93ed93bf638a915490ed5ca5a11721f1bf60f49d7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/narrative.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/narrative.md",
+          "archived_sha256": "be8925e4d9a6242eb7db40fd918bdc94aa6f40e498f9e3aa8d7ffe27ede4a819"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-level/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-level/SKILL.md",
+          "archived_sha256": "2035d20d9393f6e703e04074ded2145688a8e2e4a2191f5a75866a4fb97100bd"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-narrative/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-narrative/SKILL.md",
+          "archived_sha256": "9959626482ed8607f8a93a7fcf2c3d03546621592784d56a22b70cfe387ca0d4"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/difficulty-curve.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/difficulty-curve.md",
+          "archived_sha256": "3aeaa80aa5152065bb5dd641838d98efcb9ec651293a4831e32a0c823199ab18"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/faction-design.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/faction-design.md",
+          "archived_sha256": "abe1d5720e68169e349156bbcb42db135ecca25bf1510dda5ddd1deb3980f257"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/narrative-character-sheet.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/narrative-character-sheet.md",
+          "archived_sha256": "b40bb1cb386727a9c506cbbd76f037990e4461315554e0f78f896f0195cc79e2"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/player-journey.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/player-journey.md",
+          "archived_sha256": "786d45beef8e3e9444dfa0f22904ec3d09f4fad433c015a509b206f4d1be3324"
+        }
+      ]
+    },
+    {
+      "skill": "07b-game-level-design",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/level-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/level-designer.md",
+          "archived_sha256": "6121007acde96a808235c4290669bb5de11f1874cd1da6c9d4f0c8c7fad7ef61"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/world-builder.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/world-builder.md",
+          "archived_sha256": "9e3399c5478ea2491bfc8e42745948b7aec4c2045ecd008a318d4f72a8fad2ea"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-level/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-level/SKILL.md",
+          "archived_sha256": "2035d20d9393f6e703e04074ded2145688a8e2e4a2191f5a75866a4fb97100bd"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-narrative/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-narrative/SKILL.md",
+          "archived_sha256": "9959626482ed8607f8a93a7fcf2c3d03546621592784d56a22b70cfe387ca0d4"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/difficulty-curve.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/difficulty-curve.md",
+          "archived_sha256": "3aeaa80aa5152065bb5dd641838d98efcb9ec651293a4831e32a0c823199ab18"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/level-design-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/level-design-document.md",
+          "archived_sha256": "61b48448c070490ebb0bb5214cfbfa3a926683f687dc1f74c83d310dc063aacb"
+        }
+      ]
+    },
+    {
+      "skill": "07c-game-level-review",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/level-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/level-designer.md",
+          "archived_sha256": "6121007acde96a808235c4290669bb5de11f1874cd1da6c9d4f0c8c7fad7ef61"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/review-workflow.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/review-workflow.md",
+          "archived_sha256": "5473fff8fd07ed08d9c6c918a251fab3a253ee89c6a99ed208a835146aa134c7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/design-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/design-review/SKILL.md",
+          "archived_sha256": "3f9119c2ecc3f1b8a07484f0df9e3547bb006df349d9a73c97e8a95799aadfa9"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-level/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-level/SKILL.md",
+          "archived_sha256": "2035d20d9393f6e703e04074ded2145688a8e2e4a2191f5a75866a4fb97100bd"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/level-design-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/level-design-document.md",
+          "archived_sha256": "61b48448c070490ebb0bb5214cfbfa3a926683f687dc1f74c83d310dc063aacb"
+        }
+      ]
+    },
+    {
+      "skill": "08-game-ux-design",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/accessibility-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/accessibility-specialist.md",
+          "archived_sha256": "82c8550000b2882a1083338fdb97f46759ca8d493845d697b7594d219f362529"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ui-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ui-programmer.md",
+          "archived_sha256": "6cd29c2088724918b2680d3cc35c379276b7af11d6aa10ac990172280b1d5f48"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-ui-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-ui-specialist.md",
+          "archived_sha256": "62cbb003d7fdde1cd26fc03b47aeb6dbafc42afdf9bb8a5558be21991ecd231b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ux-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ux-designer.md",
+          "archived_sha256": "5dc3ec82ef7b401074bc7d87d89dd1507b59c465b84145cb10317ad55d77e567"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ui-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ui-code.md",
+          "archived_sha256": "be45904c33e72c717ac56ba2ee760d5a5ec1435a3b84ad4365ca513c91a7a68b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-ui/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-ui/SKILL.md",
+          "archived_sha256": "d8aa30cbc82c40f3ec53ebceaf229243cac1bc14126ea56f5bfcf57b3c81d0bf"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/ux-design/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/ux-design/SKILL.md",
+          "archived_sha256": "2d37d14b653594c0c7aa346ff8d7cc129269cda8f42fe741f6d296d6345f9845"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/hud-design.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/hud-design.md",
+          "archived_sha256": "7759c0311047baaad28db5610e4a754f585928801a8e30845b34f1204f229385"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/interaction-pattern-library.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/interaction-pattern-library.md",
+          "archived_sha256": "3eaace0e01737a9c248a331393cb618e3ae35aedcae86d0937d216d2daccd7ac"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/ux-spec.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/ux-spec.md",
+          "archived_sha256": "aae493abbe971f9d4bd4631520a87f917467347f93f0817fdb76caebe63a7bcc"
+        }
+      ]
+    },
+    {
+      "skill": "09-game-ux-review",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/accessibility-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/accessibility-specialist.md",
+          "archived_sha256": "82c8550000b2882a1083338fdb97f46759ca8d493845d697b7594d219f362529"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-ui-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-ui-specialist.md",
+          "archived_sha256": "62cbb003d7fdde1cd26fc03b47aeb6dbafc42afdf9bb8a5558be21991ecd231b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ux-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ux-designer.md",
+          "archived_sha256": "5dc3ec82ef7b401074bc7d87d89dd1507b59c465b84145cb10317ad55d77e567"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/review-workflow.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/review-workflow.md",
+          "archived_sha256": "5473fff8fd07ed08d9c6c918a251fab3a253ee89c6a99ed208a835146aa134c7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ui-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ui-code.md",
+          "archived_sha256": "be45904c33e72c717ac56ba2ee760d5a5ec1435a3b84ad4365ca513c91a7a68b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-ui/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-ui/SKILL.md",
+          "archived_sha256": "d8aa30cbc82c40f3ec53ebceaf229243cac1bc14126ea56f5bfcf57b3c81d0bf"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/ux-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/ux-review/SKILL.md",
+          "archived_sha256": "1dd5a719efd1ad5c2d831c046f9e257e9c7cff067cc9d1a99e67181e1b0f4bc0"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/hud-design.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/hud-design.md",
+          "archived_sha256": "7759c0311047baaad28db5610e4a754f585928801a8e30845b34f1204f229385"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/interaction-pattern-library.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/interaction-pattern-library.md",
+          "archived_sha256": "3eaace0e01737a9c248a331393cb618e3ae35aedcae86d0937d216d2daccd7ac"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/ux-spec.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/ux-spec.md",
+          "archived_sha256": "aae493abbe971f9d4bd4631520a87f917467347f93f0817fdb76caebe63a7bcc"
+        }
+      ]
+    },
+    {
+      "skill": "09a-game-accessibility-localization",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/accessibility-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/accessibility-specialist.md",
+          "archived_sha256": "82c8550000b2882a1083338fdb97f46759ca8d493845d697b7594d219f362529"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/localization-lead.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/localization-lead.md",
+          "archived_sha256": "96991fd33e46cc60179d1abca967ac56f6e809908a8a5fdd71aafa1be3571704"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-ui-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-ui-specialist.md",
+          "archived_sha256": "62cbb003d7fdde1cd26fc03b47aeb6dbafc42afdf9bb8a5558be21991ecd231b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ux-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ux-designer.md",
+          "archived_sha256": "5dc3ec82ef7b401074bc7d87d89dd1507b59c465b84145cb10317ad55d77e567"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/writer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/writer.md",
+          "archived_sha256": "8eafe2f3cd7f2c12acc0d8f93ed93bf638a915490ed5ca5a11721f1bf60f49d7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/narrative.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/narrative.md",
+          "archived_sha256": "be8925e4d9a6242eb7db40fd918bdc94aa6f40e498f9e3aa8d7ffe27ede4a819"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ui-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ui-code.md",
+          "archived_sha256": "be45904c33e72c717ac56ba2ee760d5a5ec1435a3b84ad4365ca513c91a7a68b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/localize/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/localize/SKILL.md",
+          "archived_sha256": "781f60f1c4259cfb3ceac0316a792a6d55659aaf20981f1c6e6a3d1dfacae83c"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-narrative/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-narrative/SKILL.md",
+          "archived_sha256": "9959626482ed8607f8a93a7fcf2c3d03546621592784d56a22b70cfe387ca0d4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-ui/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-ui/SKILL.md",
+          "archived_sha256": "d8aa30cbc82c40f3ec53ebceaf229243cac1bc14126ea56f5bfcf57b3c81d0bf"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/ux-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/ux-review/SKILL.md",
+          "archived_sha256": "1dd5a719efd1ad5c2d831c046f9e257e9c7cff067cc9d1a99e67181e1b0f4bc0"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/accessibility-requirements.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/accessibility-requirements.md",
+          "archived_sha256": "851a7cfd354f539de368fdc7063c61399a3d0a6a43ae6ee5a7215874c905a2e1"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/hud-design.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/hud-design.md",
+          "archived_sha256": "7759c0311047baaad28db5610e4a754f585928801a8e30845b34f1204f229385"
+        }
+      ]
+    },
+    {
+      "skill": "10-game-art-bible",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/art-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/art-director.md",
+          "archived_sha256": "7aa0c859189a5fbb069cd7d836344bb298614ad40c41872e066e2a55690d9d26"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/technical-artist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/technical-artist.md",
+          "archived_sha256": "30feb7cd99da83ef1b1350b109535085239eb5b2d210eeb22faa8e54633ba77d"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-shader-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-shader-specialist.md",
+          "archived_sha256": "41bc71d8563a71ed386039819adc31593a54c3fdf747c3dc080a713d22db6d5a"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/director-gates.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/director-gates.md",
+          "archived_sha256": "980605102b90a296c014c4ab00d80dbf0da252d9756d398e065f21e440f02ba0"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/shader-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/shader-code.md",
+          "archived_sha256": "a5e08163d84fae945bc38ef9e998d03120c14bb4f8d630e9bc44514839b3ec3c"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/art-bible/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/art-bible/SKILL.md",
+          "archived_sha256": "19daa484f6f6621221818e224c899ebc02c978a919a247c367f676d515e64cad"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-level/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-level/SKILL.md",
+          "archived_sha256": "2035d20d9393f6e703e04074ded2145688a8e2e4a2191f5a75866a4fb97100bd"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-narrative/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-narrative/SKILL.md",
+          "archived_sha256": "9959626482ed8607f8a93a7fcf2c3d03546621592784d56a22b70cfe387ca0d4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-polish/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-polish/SKILL.md",
+          "archived_sha256": "fb4d48c5bd8f2563d6f999bea940929a20b8c52ed797b306a999e2b4d5596d26"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-ui/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-ui/SKILL.md",
+          "archived_sha256": "d8aa30cbc82c40f3ec53ebceaf229243cac1bc14126ea56f5bfcf57b3c81d0bf"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/art-bible.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/art-bible.md",
+          "archived_sha256": "763d85c3ce5cb297c73603ac48718e4a73bf01b908d2e283693d8f678e71edd6"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        }
+      ]
+    },
+    {
+      "skill": "10a-game-environment-production",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/art-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/art-director.md",
+          "archived_sha256": "7aa0c859189a5fbb069cd7d836344bb298614ad40c41872e066e2a55690d9d26"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/technical-artist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/technical-artist.md",
+          "archived_sha256": "30feb7cd99da83ef1b1350b109535085239eb5b2d210eeb22faa8e54633ba77d"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/art-bible/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/art-bible/SKILL.md",
+          "archived_sha256": "19daa484f6f6621221818e224c899ebc02c978a919a247c367f676d515e64cad"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/asset-spec/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/asset-spec/SKILL.md",
+          "archived_sha256": "3a53c309c5e8abff8d8ab73c1217aa8fab47274abfa66836e401de83847f04e4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-level/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-level/SKILL.md",
+          "archived_sha256": "2035d20d9393f6e703e04074ded2145688a8e2e4a2191f5a75866a4fb97100bd"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-polish/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-polish/SKILL.md",
+          "archived_sha256": "fb4d48c5bd8f2563d6f999bea940929a20b8c52ed797b306a999e2b4d5596d26"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/art-bible.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/art-bible.md",
+          "archived_sha256": "763d85c3ce5cb297c73603ac48718e4a73bf01b908d2e283693d8f678e71edd6"
+        }
+      ]
+    },
+    {
+      "skill": "10b-game-audio-design",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/accessibility-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/accessibility-specialist.md",
+          "archived_sha256": "82c8550000b2882a1083338fdb97f46759ca8d493845d697b7594d219f362529"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/audio-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/audio-director.md",
+          "archived_sha256": "6f40a1c899e6f2d1f348eb91af54fa3d40a29c7236469fdc59d15f0f08c0c85a"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/sound-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/sound-designer.md",
+          "archived_sha256": "4ebaef7c7069a5dd5a68ed12ca251035f0f9b2852fd29b9eca3ea2c5a4fdf088"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ui-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ui-code.md",
+          "archived_sha256": "be45904c33e72c717ac56ba2ee760d5a5ec1435a3b84ad4365ca513c91a7a68b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/asset-spec/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/asset-spec/SKILL.md",
+          "archived_sha256": "3a53c309c5e8abff8d8ab73c1217aa8fab47274abfa66836e401de83847f04e4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-audio/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-audio/SKILL.md",
+          "archived_sha256": "6dd03358962dbef74b6c67e7d34383e0721571a534b75f1ba562f39e92287416"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-polish/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-polish/SKILL.md",
+          "archived_sha256": "fb4d48c5bd8f2563d6f999bea940929a20b8c52ed797b306a999e2b4d5596d26"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/sound-bible.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/sound-bible.md",
+          "archived_sha256": "9e1e63cbcc751113702d33a2134e05032994cd84a9a70acdf09909ec77f9b087"
+        }
+      ]
+    },
+    {
+      "skill": "10c-game-visual-reference-pack",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": []
+    },
+    {
+      "skill": "11-game-asset-spec",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/art-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/art-director.md",
+          "archived_sha256": "7aa0c859189a5fbb069cd7d836344bb298614ad40c41872e066e2a55690d9d26"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/sound-designer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/sound-designer.md",
+          "archived_sha256": "4ebaef7c7069a5dd5a68ed12ca251035f0f9b2852fd29b9eca3ea2c5a4fdf088"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/technical-artist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/technical-artist.md",
+          "archived_sha256": "30feb7cd99da83ef1b1350b109535085239eb5b2d210eeb22faa8e54633ba77d"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-shader-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-shader-specialist.md",
+          "archived_sha256": "41bc71d8563a71ed386039819adc31593a54c3fdf747c3dc080a713d22db6d5a"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/shader-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/shader-code.md",
+          "archived_sha256": "a5e08163d84fae945bc38ef9e998d03120c14bb4f8d630e9bc44514839b3ec3c"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/asset-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/asset-audit/SKILL.md",
+          "archived_sha256": "d499694d99c8b9341c1ca7a5f6bcc50fefebd8b6cbec7f132ec2f4fd678c1725"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/asset-spec/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/asset-spec/SKILL.md",
+          "archived_sha256": "3a53c309c5e8abff8d8ab73c1217aa8fab47274abfa66836e401de83847f04e4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-audio/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-audio/SKILL.md",
+          "archived_sha256": "6dd03358962dbef74b6c67e7d34383e0721571a534b75f1ba562f39e92287416"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-level/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-level/SKILL.md",
+          "archived_sha256": "2035d20d9393f6e703e04074ded2145688a8e2e4a2191f5a75866a4fb97100bd"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-narrative/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-narrative/SKILL.md",
+          "archived_sha256": "9959626482ed8607f8a93a7fcf2c3d03546621592784d56a22b70cfe387ca0d4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-polish/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-polish/SKILL.md",
+          "archived_sha256": "fb4d48c5bd8f2563d6f999bea940929a20b8c52ed797b306a999e2b4d5596d26"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-ui/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-ui/SKILL.md",
+          "archived_sha256": "d8aa30cbc82c40f3ec53ebceaf229243cac1bc14126ea56f5bfcf57b3c81d0bf"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/art-bible.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/art-bible.md",
+          "archived_sha256": "763d85c3ce5cb297c73603ac48718e4a73bf01b908d2e283693d8f678e71edd6"
+        }
+      ]
+    },
+    {
+      "skill": "11a-game-content-coverage",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/data-files.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/data-files.md",
+          "archived_sha256": "bbc65708e00a98e18278c8331fd4f69ad261a6fdc15cbbb3a96815d0800dab9d"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/content-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/content-audit/SKILL.md",
+          "archived_sha256": "6e17272fe8854e93936f55076d88435f3af2226d4e05d0b8b5f987296f00d8ab"
+        }
+      ]
+    },
+    {
+      "skill": "12-game-create-architecture",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ai-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ai-programmer.md",
+          "archived_sha256": "f9decba41651b4c225f1c4d4bf3f3bcf0eca088caf9cb3a0b3cb28f43e392b56"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/engine-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/engine-programmer.md",
+          "archived_sha256": "322b59a3167298297657c846272567ef0d6994144649da626a6a7cc651d95c46"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/gameplay-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/gameplay-programmer.md",
+          "archived_sha256": "287ac70fb839e40b0e392e47e6e23ddd90851103d41c0a82df7f56e0e168834e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-csharp-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-csharp-specialist.md",
+          "archived_sha256": "b15ca77993fb986245b4ca4e9ac7822f4d74adfd3a352d4e331a0c24d08b82fb"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-gdextension-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-gdextension-specialist.md",
+          "archived_sha256": "5781a7380ef3f90e6301e8c330cbe4f324b3e7ac0f66a91c127842e3c5a8a111"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-gdscript-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-gdscript-specialist.md",
+          "archived_sha256": "03c4d2325044ff16b55bab1e0c6412f0688704ece76513db02b7fcf352668c88"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-shader-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-shader-specialist.md",
+          "archived_sha256": "f0497d594b94ca4d0272bca8fb20ac7b8b594534060e774f64f2de143fb8a64e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-specialist.md",
+          "archived_sha256": "3156133f9bff9463a12cb48e6337f49a3ab39359550c18eabac4ac70b84b6e37"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/lead-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/lead-programmer.md",
+          "archived_sha256": "2557de5195416e28c5ee156db8c2ef7ec53b7935edd5899c26c2fc5bd9efa3b0"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/network-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/network-programmer.md",
+          "archived_sha256": "b3f107bb01b24475f93aebb6af1735fd90dd73afe070bae667cd9475b2e616e1"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/technical-artist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/technical-artist.md",
+          "archived_sha256": "30feb7cd99da83ef1b1350b109535085239eb5b2d210eeb22faa8e54633ba77d"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/technical-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/technical-director.md",
+          "archived_sha256": "fe98888f29067eb81ef4dd29d93c3498048628f4bcf6404a1c594f8a6343f9b2"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/tools-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/tools-programmer.md",
+          "archived_sha256": "1304ed30dc06506f043cbe6df33617a483988a1f73aedec1f9867bbc5de7d20b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-blueprint-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-blueprint-specialist.md",
+          "archived_sha256": "f801d74b4dbcb052439e841a63c1a853ba6242dafee5d63d18b129883c95493c"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-gas-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-gas-specialist.md",
+          "archived_sha256": "b25dc54f2ec83ca4e3790197f1b2aed5c2c1054eb6449b2dd447a1b6d4a8f9ba"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-replication-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-replication-specialist.md",
+          "archived_sha256": "9bac007eff06a320c1559d0f81f783be689c644a217b0b4605781e39fbaa1918"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-umg-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-umg-specialist.md",
+          "archived_sha256": "bdbda2833cc07ca389c01a40d5f608137c7711a02b7a8313a16af50f0c5d0ae3"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ui-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ui-programmer.md",
+          "archived_sha256": "6cd29c2088724918b2680d3cc35c379276b7af11d6aa10ac990172280b1d5f48"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-shader-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-shader-specialist.md",
+          "archived_sha256": "41bc71d8563a71ed386039819adc31593a54c3fdf747c3dc080a713d22db6d5a"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-specialist.md",
+          "archived_sha256": "81777b58e3a30f4a131025e01af6ac8fb42065214df6271e59df1aa11e5374e4"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-ui-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-ui-specialist.md",
+          "archived_sha256": "62cbb003d7fdde1cd26fc03b47aeb6dbafc42afdf9bb8a5558be21991ecd231b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unreal-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unreal-specialist.md",
+          "archived_sha256": "03794a0b048f1df4cd882ae73a964cd5368c629e00320e36051bc3d025a65c15"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coding-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coding-standards.md",
+          "archived_sha256": "4a14405e5db07efd49aaca9a38485aa428ad7ff6853b213dc21d00a59778d865"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/rules-reference.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/rules-reference.md",
+          "archived_sha256": "b7ad52ed59399af127b4e8e65d02c59ad67fe856a57eac4d9ff240d6fa2e8d68"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/setup-requirements.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/setup-requirements.md",
+          "archived_sha256": "5b5ee827bb7990628cae31ace1af7cb852ba04289bc41a551c69091737280d4d"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/technical-preferences.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/technical-preferences.md",
+          "archived_sha256": "9cec7b291a839926efd43e2b7eca7d9443397e157b09b2322c87b3e47623eb99"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ai-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ai-code.md",
+          "archived_sha256": "0b2ed79ed959c24262ca1b7ae353a78d574019d64eca040293753e165c5adb21"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/data-files.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/data-files.md",
+          "archived_sha256": "bbc65708e00a98e18278c8331fd4f69ad261a6fdc15cbbb3a96815d0800dab9d"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/engine-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/engine-code.md",
+          "archived_sha256": "24e3bc62c96ef2840843721d047ea375726fc57a5ba816faa0432007c23d98f7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/gameplay-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/gameplay-code.md",
+          "archived_sha256": "94030c94f9f39c669f9292a0e1ab57a8d6fd53d1353485202713c2465098606c"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/network-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/network-code.md",
+          "archived_sha256": "e75454f6ea2e3892521ab6500865190fe74b28ce90b604e78a7d74a6c08e675e"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/shader-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/shader-code.md",
+          "archived_sha256": "a5e08163d84fae945bc38ef9e998d03120c14bb4f8d630e9bc44514839b3ec3c"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ui-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ui-code.md",
+          "archived_sha256": "be45904c33e72c717ac56ba2ee760d5a5ec1435a3b84ad4365ca513c91a7a68b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/create-architecture/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/create-architecture/SKILL.md",
+          "archived_sha256": "8a6320b33b3132e7f98e634156c5017a8406303b0eccbaa973cdb4d9ee10e1af"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/perf-profile/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/perf-profile/SKILL.md",
+          "archived_sha256": "376f4f24dff70ec9e4a4883ec3352e0008c6c10c3f3660e0a4946b4b48ef7aa7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/setup-engine/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/setup-engine/SKILL.md",
+          "archived_sha256": "7f4bc9868ca4d78ca969174c56b8c719215d68c6f32f0df5be5194e8eb2e2eea"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-audio/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-audio/SKILL.md",
+          "archived_sha256": "6dd03358962dbef74b6c67e7d34383e0721571a534b75f1ba562f39e92287416"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-ui/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-ui/SKILL.md",
+          "archived_sha256": "d8aa30cbc82c40f3ec53ebceaf229243cac1bc14126ea56f5bfcf57b3c81d0bf"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-setup/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-setup/SKILL.md",
+          "archived_sha256": "bf3477f58af77fdeabed42e9c15f1b7bd41d6837c1ddff0450922cee694c628d"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/technical-design-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/technical-design-document.md",
+          "archived_sha256": "252a276128b70c61619ad86f8b7e3eed9dbe859fd3c4873f184b0ae3ca3f5d5c"
+        }
+      ]
+    },
+    {
+      "skill": "13-game-architecture-decision",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/security-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/security-engineer.md",
+          "archived_sha256": "73bf76067ec312fa592d9c81b26c4a7b64f8831a50404244a1ec398a77091c7e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/technical-artist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/technical-artist.md",
+          "archived_sha256": "30feb7cd99da83ef1b1350b109535085239eb5b2d210eeb22faa8e54633ba77d"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ui-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ui-programmer.md",
+          "archived_sha256": "6cd29c2088724918b2680d3cc35c379276b7af11d6aa10ac990172280b1d5f48"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-shader-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-shader-specialist.md",
+          "archived_sha256": "41bc71d8563a71ed386039819adc31593a54c3fdf747c3dc080a713d22db6d5a"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-ui-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-ui-specialist.md",
+          "archived_sha256": "62cbb003d7fdde1cd26fc03b47aeb6dbafc42afdf9bb8a5558be21991ecd231b"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/technical-preferences.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/technical-preferences.md",
+          "archived_sha256": "9cec7b291a839926efd43e2b7eca7d9443397e157b09b2322c87b3e47623eb99"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/architecture-decision/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/architecture-decision/SKILL.md",
+          "archived_sha256": "94a2299ae4ff370062e15d37680abdb13c1fc2dc05b916dcb65f46088d12b854"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/security-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/security-audit/SKILL.md",
+          "archived_sha256": "b3d04c89f1841ef93bedce57a8bb43d858ca96a92aac8b8182e9d54fe1d319f4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/setup-engine/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/setup-engine/SKILL.md",
+          "archived_sha256": "7f4bc9868ca4d78ca969174c56b8c719215d68c6f32f0df5be5194e8eb2e2eea"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-audio/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-audio/SKILL.md",
+          "archived_sha256": "6dd03358962dbef74b6c67e7d34383e0721571a534b75f1ba562f39e92287416"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-ui/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-ui/SKILL.md",
+          "archived_sha256": "d8aa30cbc82c40f3ec53ebceaf229243cac1bc14126ea56f5bfcf57b3c81d0bf"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/architecture-decision-record.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/architecture-decision-record.md",
+          "archived_sha256": "a73f51a1d24a579e0c3ccf49fa916a9d1ab73f2b53286d9d134a1887e5794888"
+        }
+      ]
+    },
+    {
+      "skill": "14-game-architecture-review",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/lead-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/lead-programmer.md",
+          "archived_sha256": "2557de5195416e28c5ee156db8c2ef7ec53b7935edd5899c26c2fc5bd9efa3b0"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/director-gates.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/director-gates.md",
+          "archived_sha256": "980605102b90a296c014c4ab00d80dbf0da252d9756d398e065f21e440f02ba0"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/review-workflow.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/review-workflow.md",
+          "archived_sha256": "5473fff8fd07ed08d9c6c918a251fab3a253ee89c6a99ed208a835146aa134c7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/architecture-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/architecture-review/SKILL.md",
+          "archived_sha256": "11fd3ee30b6c66a2745d1fdaaca3c61c440d4a1181f3667785414351a6e06311"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/code-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/code-review/SKILL.md",
+          "archived_sha256": "e0abfa89a0a22bb3cfb9042941efc8f7ffb2a73b4f92884ef8eaba670366ca53"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/architecture-traceability.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/architecture-traceability.md",
+          "archived_sha256": "a5d5ecea2290ccad676dac49bc33e6f5e3a1f6b1f5e288d560a41c755f6ea4eb"
+        }
+      ]
+    },
+    {
+      "skill": "15-game-create-control-manifest",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coding-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coding-standards.md",
+          "archived_sha256": "4a14405e5db07efd49aaca9a38485aa428ad7ff6853b213dc21d00a59778d865"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/rules-reference.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/rules-reference.md",
+          "archived_sha256": "b7ad52ed59399af127b4e8e65d02c59ad67fe856a57eac4d9ff240d6fa2e8d68"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/technical-preferences.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/technical-preferences.md",
+          "archived_sha256": "9cec7b291a839926efd43e2b7eca7d9443397e157b09b2322c87b3e47623eb99"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/engine-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/engine-code.md",
+          "archived_sha256": "24e3bc62c96ef2840843721d047ea375726fc57a5ba816faa0432007c23d98f7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/gameplay-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/gameplay-code.md",
+          "archived_sha256": "94030c94f9f39c669f9292a0e1ab57a8d6fd53d1353485202713c2465098606c"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/network-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/network-code.md",
+          "archived_sha256": "e75454f6ea2e3892521ab6500865190fe74b28ce90b604e78a7d74a6c08e675e"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/create-control-manifest/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/create-control-manifest/SKILL.md",
+          "archived_sha256": "2dd8d29c013944aed8cd05fcfbe21dc77ef8ff9c98f5155f46cee29ab3284348"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        }
+      ]
+    },
+    {
+      "skill": "15a-game-technical-risk-review",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ai-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ai-programmer.md",
+          "archived_sha256": "f9decba41651b4c225f1c4d4bf3f3bcf0eca088caf9cb3a0b3cb28f43e392b56"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/analytics-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/analytics-engineer.md",
+          "archived_sha256": "51202c94fecbe57b9dbecb4dd4fc80c3ce506d4444269bf0c2bc5bf984fa480b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/devops-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/devops-engineer.md",
+          "archived_sha256": "36bf5a49a121bbb9a7a611408d1d208436e1c9b1395b3f2e9c2cb7d461e50171"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/engine-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/engine-programmer.md",
+          "archived_sha256": "322b59a3167298297657c846272567ef0d6994144649da626a6a7cc651d95c46"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-csharp-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-csharp-specialist.md",
+          "archived_sha256": "b15ca77993fb986245b4ca4e9ac7822f4d74adfd3a352d4e331a0c24d08b82fb"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-gdextension-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-gdextension-specialist.md",
+          "archived_sha256": "5781a7380ef3f90e6301e8c330cbe4f324b3e7ac0f66a91c127842e3c5a8a111"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-gdscript-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-gdscript-specialist.md",
+          "archived_sha256": "03c4d2325044ff16b55bab1e0c6412f0688704ece76513db02b7fcf352668c88"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-shader-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-shader-specialist.md",
+          "archived_sha256": "f0497d594b94ca4d0272bca8fb20ac7b8b594534060e774f64f2de143fb8a64e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-specialist.md",
+          "archived_sha256": "3156133f9bff9463a12cb48e6337f49a3ab39359550c18eabac4ac70b84b6e37"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/network-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/network-programmer.md",
+          "archived_sha256": "b3f107bb01b24475f93aebb6af1735fd90dd73afe070bae667cd9475b2e616e1"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/performance-analyst.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/performance-analyst.md",
+          "archived_sha256": "c155149e303e200a00074721cd3d9bf5b92d080871ab6298670954aec5705468"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/prototyper.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/prototyper.md",
+          "archived_sha256": "c1fa09ea15b0bfb532098bc6ee24ebb998570ed7eb6cff5f3f4c4456f09ff956"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/security-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/security-engineer.md",
+          "archived_sha256": "73bf76067ec312fa592d9c81b26c4a7b64f8831a50404244a1ec398a77091c7e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/technical-director.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/technical-director.md",
+          "archived_sha256": "fe98888f29067eb81ef4dd29d93c3498048628f4bcf6404a1c594f8a6343f9b2"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/tools-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/tools-programmer.md",
+          "archived_sha256": "1304ed30dc06506f043cbe6df33617a483988a1f73aedec1f9867bbc5de7d20b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-blueprint-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-blueprint-specialist.md",
+          "archived_sha256": "f801d74b4dbcb052439e841a63c1a853ba6242dafee5d63d18b129883c95493c"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-gas-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-gas-specialist.md",
+          "archived_sha256": "b25dc54f2ec83ca4e3790197f1b2aed5c2c1054eb6449b2dd447a1b6d4a8f9ba"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-replication-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-replication-specialist.md",
+          "archived_sha256": "9bac007eff06a320c1559d0f81f783be689c644a217b0b4605781e39fbaa1918"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-umg-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-umg-specialist.md",
+          "archived_sha256": "bdbda2833cc07ca389c01a40d5f608137c7711a02b7a8313a16af50f0c5d0ae3"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-addressables-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-addressables-specialist.md",
+          "archived_sha256": "29e14d428647a55baeaa9faf2adae55fcbc6e4a56ed4dfd61c534641fb0253ea"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-dots-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-dots-specialist.md",
+          "archived_sha256": "98c328463e1b6af0b44f46bd3cb27abce52ba7e85571c56d18118c95a8bf9273"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unity-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unity-specialist.md",
+          "archived_sha256": "81777b58e3a30f4a131025e01af6ac8fb42065214df6271e59df1aa11e5374e4"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unreal-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unreal-specialist.md",
+          "archived_sha256": "03794a0b048f1df4cd882ae73a964cd5368c629e00320e36051bc3d025a65c15"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/setup-requirements.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/setup-requirements.md",
+          "archived_sha256": "5b5ee827bb7990628cae31ace1af7cb852ba04289bc41a551c69091737280d4d"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ai-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ai-code.md",
+          "archived_sha256": "0b2ed79ed959c24262ca1b7ae353a78d574019d64eca040293753e165c5adb21"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/engine-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/engine-code.md",
+          "archived_sha256": "24e3bc62c96ef2840843721d047ea375726fc57a5ba816faa0432007c23d98f7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/network-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/network-code.md",
+          "archived_sha256": "e75454f6ea2e3892521ab6500865190fe74b28ce90b604e78a7d74a6c08e675e"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/prototype-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/prototype-code.md",
+          "archived_sha256": "67cf516d0febcb9829407386b4d16b773ea38cc21012fdeb03a53943cc6ed5bd"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/shader-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/shader-code.md",
+          "archived_sha256": "a5e08163d84fae945bc38ef9e998d03120c14bb4f8d630e9bc44514839b3ec3c"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/create-architecture/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/create-architecture/SKILL.md",
+          "archived_sha256": "8a6320b33b3132e7f98e634156c5017a8406303b0eccbaa973cdb4d9ee10e1af"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/gate-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/gate-check/SKILL.md",
+          "archived_sha256": "3ae463120765909eedb2d04f592191bf90afda4795ae88522d314e1833773da7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/perf-profile/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/perf-profile/SKILL.md",
+          "archived_sha256": "376f4f24dff70ec9e4a4883ec3352e0008c6c10c3f3660e0a4946b4b48ef7aa7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/prototype/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/prototype/SKILL.md",
+          "archived_sha256": "d9475f988c6ec1bb676ab5d8149ef7b7321e63a6b4eb7f7194cfd598be1255de"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/security-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/security-audit/SKILL.md",
+          "archived_sha256": "b3d04c89f1841ef93bedce57a8bb43d858ca96a92aac8b8182e9d54fe1d319f4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/setup-engine/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/setup-engine/SKILL.md",
+          "archived_sha256": "7f4bc9868ca4d78ca969174c56b8c719215d68c6f32f0df5be5194e8eb2e2eea"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/tech-debt/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/tech-debt/SKILL.md",
+          "archived_sha256": "bebf9faf308eb8ac4dbd70e907e2ae64daff51d86bf16353f5997543c318c6c8"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-setup/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-setup/SKILL.md",
+          "archived_sha256": "bf3477f58af77fdeabed42e9c15f1b7bd41d6837c1ddff0450922cee694c628d"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/vertical-slice/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/vertical-slice/SKILL.md",
+          "archived_sha256": "a555d5a79fceee22229b5587778ccae3f2c17514c92ffa62b708db613c574f9a"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/prototype-report.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/prototype-report.md",
+          "archived_sha256": "1a3ec0d7713cc5980594a911e68b6ae5edd890122ac7a0bcf84b14993c315e8d"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/risk-register-entry.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/risk-register-entry.md",
+          "archived_sha256": "0d4460ea5b5a3b2a87506fab8db2344efbffb9cf39b4ece285025038f9e0ff34"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/technical-design-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/technical-design-document.md",
+          "archived_sha256": "252a276128b70c61619ad86f8b7e3eed9dbe859fd3c4873f184b0ae3ca3f5d5c"
+        }
+      ]
+    },
+    {
+      "skill": "16-game-propagate-design-change",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coordination-rules.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coordination-rules.md",
+          "archived_sha256": "8998fa2d5dd464940f44bdeb24a6fad9c4531f958189ef88422f211666f91538"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/changelog/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/changelog/SKILL.md",
+          "archived_sha256": "305d9f720a28c8ff3bfc5badd0732a731f10bb81d81c63c61655018dd2c7dc5b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/propagate-design-change/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/propagate-design-change/SKILL.md",
+          "archived_sha256": "eba7901d3875f81946ab8803f458d142427102c438296fae83e3f4c4101115ed"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/quick-design/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/quick-design/SKILL.md",
+          "archived_sha256": "e1274daaef2d2f925bc98944013e9ec31c25e4ad0906345fda744a7a59271d7a"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/changelog-template.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/changelog-template.md",
+          "archived_sha256": "cb4dad3cbc41b1501babe53cc9f00be1311aed39f3ea19f57d77ecc0bb9314b1"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "archived_sha256": "e1fbc30461f18c4ff5f018cdaf04dc868c47e4aa54da79a26885aaba7081e57b"
+        }
+      ]
+    },
+    {
+      "skill": "17-game-create-epics",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/producer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/producer.md",
+          "archived_sha256": "05f8bf426001cbd07ca9ca40dde0348139e208f97af7d87abcfecf8ca84c3257"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/tools-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/tools-programmer.md",
+          "archived_sha256": "1304ed30dc06506f043cbe6df33617a483988a1f73aedec1f9867bbc5de7d20b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/create-epics/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/create-epics/SKILL.md",
+          "archived_sha256": "5a761ad272143ddf694cd29068bf11efba18cd24ef4e23c48c79326d0d67a259"
+        }
+      ]
+    },
+    {
+      "skill": "17a-game-production-readiness",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/community-manager.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/community-manager.md",
+          "archived_sha256": "ba552c736a42cb83f8d04d79199f29c3b8dc81914c7530e86c266ab11c034496"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/devops-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/devops-engineer.md",
+          "archived_sha256": "36bf5a49a121bbb9a7a611408d1d208436e1c9b1395b3f2e9c2cb7d461e50171"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/producer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/producer.md",
+          "archived_sha256": "05f8bf426001cbd07ca9ca40dde0348139e208f97af7d87abcfecf8ca84c3257"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/release-manager.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/release-manager.md",
+          "archived_sha256": "75df18172fcb905c544972edcfe43589093f02f6abf41d388f952c1eadbe11bd"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/director-gates.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/director-gates.md",
+          "archived_sha256": "980605102b90a296c014c4ab00d80dbf0da252d9756d398e065f21e440f02ba0"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/bug-report/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/bug-report/SKILL.md",
+          "archived_sha256": "2960da7266e446de232a7f46229a9908825b188db4a28d834f030690d646575e"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/bug-triage/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/bug-triage/SKILL.md",
+          "archived_sha256": "cdafaffc22abe4f6ee9dc7d93b34222547dd3281c25e60de80d1876517a395d2"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/changelog/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/changelog/SKILL.md",
+          "archived_sha256": "305d9f720a28c8ff3bfc5badd0732a731f10bb81d81c63c61655018dd2c7dc5b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/day-one-patch/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/day-one-patch/SKILL.md",
+          "archived_sha256": "eb48e1eb8a578056ff31f6ee2b6a2d61fb02d65a0af3441a9922002b7583aab0"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/estimate/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/estimate/SKILL.md",
+          "archived_sha256": "7774e2d256a054a215cf62cc81d4d79f4d18e2154203671a39f643c0881be5fd"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/gate-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/gate-check/SKILL.md",
+          "archived_sha256": "3ae463120765909eedb2d04f592191bf90afda4795ae88522d314e1833773da7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/hotfix/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/hotfix/SKILL.md",
+          "archived_sha256": "6d99a79bce373cd9f8fe02b1db2933c9121ac0a79c778d588dd03b5f337c4bf9"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/launch-checklist/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/launch-checklist/SKILL.md",
+          "archived_sha256": "867e94f20e9b5da3855a37b032bd01801cdceed899eb95ecea7588abed5b188c"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/milestone-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/milestone-review/SKILL.md",
+          "archived_sha256": "736a1cffb028b96b890fd0b6b469dcdd5f948a907d5a7f0e157ccca92ac8adc7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/patch-notes/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/patch-notes/SKILL.md",
+          "archived_sha256": "ffb34d12e0d3fe21d31e6406a77b6db77b16a8185358ee8183b08de584498d30"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/release-checklist/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/release-checklist/SKILL.md",
+          "archived_sha256": "a4c4294234e7ba6ba51718ba6a0996c68dd1e4f9cefc30286936878a827bc86a"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/retrospective/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/retrospective/SKILL.md",
+          "archived_sha256": "60f9525887c94e4cf8239de3a2078389e6d6b19dd9f10705772490650c11ffda"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/scope-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/scope-check/SKILL.md",
+          "archived_sha256": "f91150df11aadf32cfa64a1476c608396e12eeeba9aca03836c52299f3a0efa0"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/smoke-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/smoke-check/SKILL.md",
+          "archived_sha256": "98521191c6dd949bce2df9d4f8d4abeebbc0adf36b665e7a99d7645dc9ed42e3"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/sprint-plan/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/sprint-plan/SKILL.md",
+          "archived_sha256": "d402a9f276f81663c8b07f6c4fd2b19a3fa9d4ee9411e3d57e6868daa095ee42"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-live-ops/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-live-ops/SKILL.md",
+          "archived_sha256": "214cc07ec8e83074d9ca16236ab867cd552e2de481aca7d225c06013b057dd90"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-release/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-release/SKILL.md",
+          "archived_sha256": "9cb0f1c15b4af864f57717de9f3ef4ad516370d6abf1d0047e0b7ed10d496b69"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/tech-debt/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/tech-debt/SKILL.md",
+          "archived_sha256": "bebf9faf308eb8ac4dbd70e907e2ae64daff51d86bf16353f5997543c318c6c8"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/vertical-slice/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/vertical-slice/SKILL.md",
+          "archived_sha256": "a555d5a79fceee22229b5587778ccae3f2c17514c92ffa62b708db613c574f9a"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/changelog-template.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/changelog-template.md",
+          "archived_sha256": "cb4dad3cbc41b1501babe53cc9f00be1311aed39f3ea19f57d77ecc0bb9314b1"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/collaborative-protocols/leadership-agent-protocol.md",
+          "archived_sha256": "e1fbc30461f18c4ff5f018cdaf04dc868c47e4aa54da79a26885aaba7081e57b"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/incident-response.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/incident-response.md",
+          "archived_sha256": "8ba68a9ac8a1f404c5fd785b2a3c9287ed52873bb7acf028e6eef1bb6f9dab4c"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/milestone-definition.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/milestone-definition.md",
+          "archived_sha256": "ecdef4e53c02ea9ee954ae0124291fcd9bd3627ef6a444a4fc7878587a101251"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/post-mortem.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/post-mortem.md",
+          "archived_sha256": "e7e2ea73be4295761c2a355ab542be620d5b947ca5749ad8efd43abdd9c16390"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/release-checklist-template.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/release-checklist-template.md",
+          "archived_sha256": "7886ea10821a99cfde3e7b3e3d3688fbc475f39701b79481ec4d5f5466eed11e"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/release-notes.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/release-notes.md",
+          "archived_sha256": "0d3ea9d50eb6a2dd57a042f656fc8fc8918522c6ec9b19d6cd48d36f4b390ecb"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/risk-register-entry.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/risk-register-entry.md",
+          "archived_sha256": "0d4460ea5b5a3b2a87506fab8db2344efbffb9cf39b4ece285025038f9e0ff34"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/sprint-plan.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/sprint-plan.md",
+          "archived_sha256": "4e5f640fe11ba5467e457f248fbf2e4d53f45a62a75ccf123e554c701042950f"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/vertical-slice-report.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/vertical-slice-report.md",
+          "archived_sha256": "87f8ba47dfef82301b6f81a378c29d139ffe11913088af681439b0700beab3c7"
+        }
+      ]
+    },
+    {
+      "skill": "18-game-create-stories",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/devops-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/devops-engineer.md",
+          "archived_sha256": "36bf5a49a121bbb9a7a611408d1d208436e1c9b1395b3f2e9c2cb7d461e50171"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/gameplay-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/gameplay-programmer.md",
+          "archived_sha256": "287ac70fb839e40b0e392e47e6e23ddd90851103d41c0a82df7f56e0e168834e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/lead-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/lead-programmer.md",
+          "archived_sha256": "2557de5195416e28c5ee156db8c2ef7ec53b7935edd5899c26c2fc5bd9efa3b0"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/tools-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/tools-programmer.md",
+          "archived_sha256": "1304ed30dc06506f043cbe6df33617a483988a1f73aedec1f9867bbc5de7d20b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ui-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ui-programmer.md",
+          "archived_sha256": "6cd29c2088724918b2680d3cc35c379276b7af11d6aa10ac990172280b1d5f48"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coding-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coding-standards.md",
+          "archived_sha256": "4a14405e5db07efd49aaca9a38485aa428ad7ff6853b213dc21d00a59778d865"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/test-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/test-standards.md",
+          "archived_sha256": "78c642a6f22a815a990aca02e677d5d7f676524dff59a9a8034f1c7d69b42597"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/code-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/code-review/SKILL.md",
+          "archived_sha256": "e0abfa89a0a22bb3cfb9042941efc8f7ffb2a73b4f92884ef8eaba670366ca53"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/create-stories/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/create-stories/SKILL.md",
+          "archived_sha256": "f1517b9f5a90317f93149c9915ade684dbf75ab8b00c1ea9bdeaa6f921756b56"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/dev-story/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/dev-story/SKILL.md",
+          "archived_sha256": "ddada36350af8d121b63159e79eb72e3d5a1482b74e88f547f556ca92efd2b04"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/estimate/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/estimate/SKILL.md",
+          "archived_sha256": "7774e2d256a054a215cf62cc81d4d79f4d18e2154203671a39f643c0881be5fd"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/sprint-plan/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/sprint-plan/SKILL.md",
+          "archived_sha256": "d402a9f276f81663c8b07f6c4fd2b19a3fa9d4ee9411e3d57e6868daa095ee42"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/story-done/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/story-done/SKILL.md",
+          "archived_sha256": "a9215959142b6417223ff818f99f2f33b10d401bb9ff446f622ec8573433b261"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-helpers/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-helpers/SKILL.md",
+          "archived_sha256": "98494481c7fe0b69611243f9174a1a860622e2b5488499c953a2e539001e3438"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-setup/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-setup/SKILL.md",
+          "archived_sha256": "bf3477f58af77fdeabed42e9c15f1b7bd41d6837c1ddff0450922cee694c628d"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/sprint-plan.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/sprint-plan.md",
+          "archived_sha256": "4e5f640fe11ba5467e457f248fbf2e4d53f45a62a75ccf123e554c701042950f"
+        }
+      ]
+    },
+    {
+      "skill": "19-game-qa-plan",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ai-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ai-programmer.md",
+          "archived_sha256": "f9decba41651b4c225f1c4d4bf3f3bcf0eca088caf9cb3a0b3cb28f43e392b56"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/analytics-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/analytics-engineer.md",
+          "archived_sha256": "51202c94fecbe57b9dbecb4dd4fc80c3ce506d4444269bf0c2bc5bf984fa480b"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/devops-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/devops-engineer.md",
+          "archived_sha256": "36bf5a49a121bbb9a7a611408d1d208436e1c9b1395b3f2e9c2cb7d461e50171"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-csharp-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-csharp-specialist.md",
+          "archived_sha256": "b15ca77993fb986245b4ca4e9ac7822f4d74adfd3a352d4e331a0c24d08b82fb"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-gdextension-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-gdextension-specialist.md",
+          "archived_sha256": "5781a7380ef3f90e6301e8c330cbe4f324b3e7ac0f66a91c127842e3c5a8a111"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-gdscript-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-gdscript-specialist.md",
+          "archived_sha256": "03c4d2325044ff16b55bab1e0c6412f0688704ece76513db02b7fcf352668c88"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-shader-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-shader-specialist.md",
+          "archived_sha256": "f0497d594b94ca4d0272bca8fb20ac7b8b594534060e774f64f2de143fb8a64e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/godot-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/godot-specialist.md",
+          "archived_sha256": "3156133f9bff9463a12cb48e6337f49a3ab39359550c18eabac4ac70b84b6e37"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/network-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/network-programmer.md",
+          "archived_sha256": "b3f107bb01b24475f93aebb6af1735fd90dd73afe070bae667cd9475b2e616e1"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/performance-analyst.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/performance-analyst.md",
+          "archived_sha256": "c155149e303e200a00074721cd3d9bf5b92d080871ab6298670954aec5705468"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/prototyper.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/prototyper.md",
+          "archived_sha256": "c1fa09ea15b0bfb532098bc6ee24ebb998570ed7eb6cff5f3f4c4456f09ff956"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/qa-lead.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/qa-lead.md",
+          "archived_sha256": "d01ddb9728c7c34778db8c9b3e9fc2a1d64efa792a140573d09946eea69bce32"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/qa-tester.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/qa-tester.md",
+          "archived_sha256": "73eb6e7fa9921853986d6bc7afbedfb26992a16db1acc01ded754b1a9a10df61"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/security-engineer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/security-engineer.md",
+          "archived_sha256": "73bf76067ec312fa592d9c81b26c4a7b64f8831a50404244a1ec398a77091c7e"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-blueprint-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-blueprint-specialist.md",
+          "archived_sha256": "f801d74b4dbcb052439e841a63c1a853ba6242dafee5d63d18b129883c95493c"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-gas-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-gas-specialist.md",
+          "archived_sha256": "b25dc54f2ec83ca4e3790197f1b2aed5c2c1054eb6449b2dd447a1b6d4a8f9ba"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-replication-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-replication-specialist.md",
+          "archived_sha256": "9bac007eff06a320c1559d0f81f783be689c644a217b0b4605781e39fbaa1918"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ue-umg-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ue-umg-specialist.md",
+          "archived_sha256": "bdbda2833cc07ca389c01a40d5f608137c7711a02b7a8313a16af50f0c5d0ae3"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/ui-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/ui-programmer.md",
+          "archived_sha256": "6cd29c2088724918b2680d3cc35c379276b7af11d6aa10ac990172280b1d5f48"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/unreal-specialist.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/unreal-specialist.md",
+          "archived_sha256": "03794a0b048f1df4cd882ae73a964cd5368c629e00320e36051bc3d025a65c15"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coding-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coding-standards.md",
+          "archived_sha256": "4a14405e5db07efd49aaca9a38485aa428ad7ff6853b213dc21d00a59778d865"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/rules-reference.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/rules-reference.md",
+          "archived_sha256": "b7ad52ed59399af127b4e8e65d02c59ad67fe856a57eac4d9ff240d6fa2e8d68"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ai-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ai-code.md",
+          "archived_sha256": "0b2ed79ed959c24262ca1b7ae353a78d574019d64eca040293753e165c5adb21"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/data-files.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/data-files.md",
+          "archived_sha256": "bbc65708e00a98e18278c8331fd4f69ad261a6fdc15cbbb3a96815d0800dab9d"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/engine-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/engine-code.md",
+          "archived_sha256": "24e3bc62c96ef2840843721d047ea375726fc57a5ba816faa0432007c23d98f7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/gameplay-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/gameplay-code.md",
+          "archived_sha256": "94030c94f9f39c669f9292a0e1ab57a8d6fd53d1353485202713c2465098606c"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/network-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/network-code.md",
+          "archived_sha256": "e75454f6ea2e3892521ab6500865190fe74b28ce90b604e78a7d74a6c08e675e"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/prototype-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/prototype-code.md",
+          "archived_sha256": "67cf516d0febcb9829407386b4d16b773ea38cc21012fdeb03a53943cc6ed5bd"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/shader-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/shader-code.md",
+          "archived_sha256": "a5e08163d84fae945bc38ef9e998d03120c14bb4f8d630e9bc44514839b3ec3c"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/test-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/test-standards.md",
+          "archived_sha256": "78c642a6f22a815a990aca02e677d5d7f676524dff59a9a8034f1c7d69b42597"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/ui-code.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/ui-code.md",
+          "archived_sha256": "be45904c33e72c717ac56ba2ee760d5a5ec1435a3b84ad4365ca513c91a7a68b"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/bug-report/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/bug-report/SKILL.md",
+          "archived_sha256": "2960da7266e446de232a7f46229a9908825b188db4a28d834f030690d646575e"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/bug-triage/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/bug-triage/SKILL.md",
+          "archived_sha256": "cdafaffc22abe4f6ee9dc7d93b34222547dd3281c25e60de80d1876517a395d2"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/code-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/code-review/SKILL.md",
+          "archived_sha256": "e0abfa89a0a22bb3cfb9042941efc8f7ffb2a73b4f92884ef8eaba670366ca53"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/content-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/content-audit/SKILL.md",
+          "archived_sha256": "6e17272fe8854e93936f55076d88435f3af2226d4e05d0b8b5f987296f00d8ab"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/perf-profile/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/perf-profile/SKILL.md",
+          "archived_sha256": "376f4f24dff70ec9e4a4883ec3352e0008c6c10c3f3660e0a4946b4b48ef7aa7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/playtest-report/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/playtest-report/SKILL.md",
+          "archived_sha256": "708a99ffe0990079bfe7b34c49a641e6131c32173c966f7c51e588def5e75548"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/prototype/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/prototype/SKILL.md",
+          "archived_sha256": "d9475f988c6ec1bb676ab5d8149ef7b7321e63a6b4eb7f7194cfd598be1255de"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/qa-plan/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/qa-plan/SKILL.md",
+          "archived_sha256": "f4e9823754aaad75ff87fe700a826c0953ce9ddf853130e2d6cdf3ba2d3622ba"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/regression-suite/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/regression-suite/SKILL.md",
+          "archived_sha256": "8f073b6b576c88fba6129efd57f4c71f04c97563f3c5a532c0ae28d2a5c0f0fc"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/release-checklist/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/release-checklist/SKILL.md",
+          "archived_sha256": "a4c4294234e7ba6ba51718ba6a0996c68dd1e4f9cefc30286936878a827bc86a"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/reverse-document/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/reverse-document/SKILL.md",
+          "archived_sha256": "71d5beda61de4815f52bb63b38780f55f890db6dd8c5d22842b1b179fb393876"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/security-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/security-audit/SKILL.md",
+          "archived_sha256": "b3d04c89f1841ef93bedce57a8bb43d858ca96a92aac8b8182e9d54fe1d319f4"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/skill-test/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/skill-test/SKILL.md",
+          "archived_sha256": "24d09805593a811cc10b46d40a45eb1e36b040cfdc4e7a2ae3e36ffa51bd4cf9"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/smoke-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/smoke-check/SKILL.md",
+          "archived_sha256": "98521191c6dd949bce2df9d4f8d4abeebbc0adf36b665e7a99d7645dc9ed42e3"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/soak-test/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/soak-test/SKILL.md",
+          "archived_sha256": "9f090f0e39575265a9e8e5e042dd81af81191e346ed3a92983a8d1d1a5ba6bc1"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-audio/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-audio/SKILL.md",
+          "archived_sha256": "6dd03358962dbef74b6c67e7d34383e0721571a534b75f1ba562f39e92287416"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-combat/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-combat/SKILL.md",
+          "archived_sha256": "8a3de29e9ac63a38d025ac5451c0c93626f651741e1002f159b9983f4a31af05"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-polish/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-polish/SKILL.md",
+          "archived_sha256": "fb4d48c5bd8f2563d6f999bea940929a20b8c52ed797b306a999e2b4d5596d26"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-qa/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-qa/SKILL.md",
+          "archived_sha256": "1d67b5e45ae41e20c0c4ecaa3e89441c2493327b737fb369d3c6b66a369b1bd3"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-release/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-release/SKILL.md",
+          "archived_sha256": "9cb0f1c15b4af864f57717de9f3ef4ad516370d6abf1d0047e0b7ed10d496b69"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-evidence-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-evidence-review/SKILL.md",
+          "archived_sha256": "04cdf0b7e94ab2dab58850bf1a70a2a6f33810ea7abb6102eaec8f2d00b9026e"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-flakiness/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-flakiness/SKILL.md",
+          "archived_sha256": "3849299d9c0b667a2974157a2ce692892bcef475b87e0c20ad029b22f335b805"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-helpers/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-helpers/SKILL.md",
+          "archived_sha256": "98494481c7fe0b69611243f9174a1a860622e2b5488499c953a2e539001e3438"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-setup/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-setup/SKILL.md",
+          "archived_sha256": "bf3477f58af77fdeabed42e9c15f1b7bd41d6837c1ddff0450922cee694c628d"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/vertical-slice/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/vertical-slice/SKILL.md",
+          "archived_sha256": "a555d5a79fceee22229b5587778ccae3f2c17514c92ffa62b708db613c574f9a"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/collaborative-protocols/implementation-agent-protocol.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/collaborative-protocols/implementation-agent-protocol.md",
+          "archived_sha256": "b20603859a855f1db31ae09c2a9967d27aa4dd0f4b2fc87b673698e837dd9b54"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/concept-doc-from-prototype.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/concept-doc-from-prototype.md",
+          "archived_sha256": "f42d764e92891b1f98774a1501a5368c7fcf46b1c4ad4e87757ef2101633f135"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/pitch-document.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/pitch-document.md",
+          "archived_sha256": "ed0a544b18032bad4c9dcbe9a79b1154f943e1c5df210d308976f590eb8889b6"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/prototype-report.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/prototype-report.md",
+          "archived_sha256": "1a3ec0d7713cc5980594a911e68b6ae5edd890122ac7a0bcf84b14993c315e8d"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/release-checklist-template.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/release-checklist-template.md",
+          "archived_sha256": "7886ea10821a99cfde3e7b3e3d3688fbc475f39701b79481ec4d5f5466eed11e"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/test-evidence.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/test-evidence.md",
+          "archived_sha256": "a6c857d42f29ea3f3264cc2cef66063b62d57b9a4ef87e4af7c08e98547b7a72"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/test-plan.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/test-plan.md",
+          "archived_sha256": "56e330553c0d7d32f807d9174947ad55ee174eb3f1fabc2d7d5529f1bfdc4377"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/vertical-slice-report.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/vertical-slice-report.md",
+          "archived_sha256": "87f8ba47dfef82301b6f81a378c29d139ffe11913088af681439b0700beab3c7"
+        }
+      ]
+    },
+    {
+      "skill": "20-game-story-readiness",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/lead-programmer.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/lead-programmer.md",
+          "archived_sha256": "2557de5195416e28c5ee156db8c2ef7ec53b7935edd5899c26c2fc5bd9efa3b0"
+        },
+        {
+          "category": "agents",
+          "source_path": ".claude/agents/qa-lead.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/agents/qa-lead.md",
+          "archived_sha256": "d01ddb9728c7c34778db8c9b3e9fc2a1d64efa792a140573d09946eea69bce32"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/coding-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/coding-standards.md",
+          "archived_sha256": "4a14405e5db07efd49aaca9a38485aa428ad7ff6853b213dc21d00a59778d865"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/director-gates.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/director-gates.md",
+          "archived_sha256": "980605102b90a296c014c4ab00d80dbf0da252d9756d398e065f21e440f02ba0"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/review-workflow.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/review-workflow.md",
+          "archived_sha256": "5473fff8fd07ed08d9c6c918a251fab3a253ee89c6a99ed208a835146aa134c7"
+        },
+        {
+          "category": "rules",
+          "source_path": ".claude/rules/test-standards.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/rules/test-standards.md",
+          "archived_sha256": "78c642a6f22a815a990aca02e677d5d7f676524dff59a9a8034f1c7d69b42597"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/architecture-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/architecture-review/SKILL.md",
+          "archived_sha256": "11fd3ee30b6c66a2745d1fdaaca3c61c440d4a1181f3667785414351a6e06311"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/content-audit/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/content-audit/SKILL.md",
+          "archived_sha256": "6e17272fe8854e93936f55076d88435f3af2226d4e05d0b8b5f987296f00d8ab"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/dev-story/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/dev-story/SKILL.md",
+          "archived_sha256": "ddada36350af8d121b63159e79eb72e3d5a1482b74e88f547f556ca92efd2b04"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/gate-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/gate-check/SKILL.md",
+          "archived_sha256": "3ae463120765909eedb2d04f592191bf90afda4795ae88522d314e1833773da7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/sprint-plan/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/sprint-plan/SKILL.md",
+          "archived_sha256": "d402a9f276f81663c8b07f6c4fd2b19a3fa9d4ee9411e3d57e6868daa095ee42"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/story-done/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/story-done/SKILL.md",
+          "archived_sha256": "a9215959142b6417223ff818f99f2f33b10d401bb9ff446f622ec8573433b261"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/story-readiness/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/story-readiness/SKILL.md",
+          "archived_sha256": "f1fc25f80f811fd38c53144c305706488c031974a5f0925cdf18986467de90eb"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/team-qa/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/team-qa/SKILL.md",
+          "archived_sha256": "1d67b5e45ae41e20c0c4ecaa3e89441c2493327b737fb369d3c6b66a369b1bd3"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/test-evidence-review/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/test-evidence-review/SKILL.md",
+          "archived_sha256": "04cdf0b7e94ab2dab58850bf1a70a2a6f33810ea7abb6102eaec8f2d00b9026e"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/architecture-traceability.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/architecture-traceability.md",
+          "archived_sha256": "a5d5ecea2290ccad676dac49bc33e6f5e3a1f6b1f5e288d560a41c755f6ea4eb"
+        },
+        {
+          "category": "templates",
+          "source_path": ".claude/docs/templates/test-evidence.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/templates/test-evidence.md",
+          "archived_sha256": "a6c857d42f29ea3f3264cc2cef66063b62d57b9a4ef87e4af7c08e98547b7a72"
+        }
+      ]
+    },
+    {
+      "skill": "21-game-gate-check",
+      "role": "stage",
+      "origin": "generalized project adaptation; methods rewritten for profile-based applicability",
+      "method_sources": [
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/director-gates.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/director-gates.md",
+          "archived_sha256": "980605102b90a296c014c4ab00d80dbf0da252d9756d398e065f21e440f02ba0"
+        },
+        {
+          "category": "reference",
+          "source_path": ".claude/docs/review-workflow.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/docs/review-workflow.md",
+          "archived_sha256": "5473fff8fd07ed08d9c6c918a251fab3a253ee89c6a99ed208a835146aa134c7"
+        },
+        {
+          "category": "skills",
+          "source_path": ".claude/skills/gate-check/SKILL.md",
+          "source_url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/984023ddac0d5e27624f2baacde6105e45de375f/.claude/skills/gate-check/SKILL.md",
+          "archived_sha256": "3ae463120765909eedb2d04f592191bf90afda4795ae88522d314e1833773da7"
+        }
+      ]
+    }
+  ]
+}

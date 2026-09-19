@@ -1,0 +1,22 @@
+---
+name: 04-game-review-all-gdds
+description: Independently review the whole game's documentation through end-to-end scenarios, rule completeness, and cross-system conflicts. Repeat after material changes and before architecture or implementation handoff.
+---
+
+# 04 — Review the whole game
+
+Follow the [protocol](../00-game-preproduction/references/protocol.md), including its source-loading rules. Use the full [coverage schema](../00-game-preproduction/references/coverage.md) for a complete review. For a limited pass, select relevant COV areas and explicitly list unreviewed scope. Inputs through `profile.sources`: baseline, map 02, report 03, current gameplay specifications and data, and registry 05 if available. A change review includes suppliers and consumers of changed rules. A full review covers the entire agreed product; unread areas limit the conclusion.
+
+1. Build a document matrix covering purpose/experience, rules and states, formulas/settings, edge cases, dependencies, acceptance criteria, and feedback. Check both sides of contracts, ownership, event order, units, and rounding. A gap within one document matters as much as a conflict between two.
+2. Compare the player promise, audience, and design principles with applicable mechanics, UX, visual, audio, and narrative decisions. Identify actual decisions influenced by each principle. Review the full loop, available alternatives, and irreversible states. Do not present a taste preference as a demonstrated defect.
+3. Select scenarios from the product and its risks: the first complete loop, experienced or late play, the least favorable permitted start, failure or cancellation, repeated actions, exit/return, and recovery. Competitive games may require asymmetry and draws; puzzles, dead ends and resets; generation, rejected outputs; networking, supported participant configurations, disconnections, and state ownership. Select applicable cases without adding modes.
+4. For each scenario, record initial state, trigger, system sequence, data, change owner, feedback, and outcome. Look for duplicate rewards, races, invalid transitions, lost progress, circular access conditions, and unspecified outcomes. Do not invent a rule to make a scenario pass.
+5. Review onboarding separately: introduce knowledge → practice → independent use → complex challenge → recovery from error. Distinguish execution, knowledge, resource, and simultaneous-decision difficulty. Learning time and enjoyment remain hypotheses until observed.
+6. Reconcile the content coverage matrix, applicable narrative states from 07a, spatial packages and current 07c review, and player-feedback contracts from 06. For procedural content, check boundaries, forbidden combinations, and reproducible scenario classes. Assign specialist Codex subagents according to actual risk; never claim delegation that did not happen. Every conclusion must identify its source revisions.
+7. Separate demonstrated conflicts, missing contracts, and hypotheses. Each finding needs sources, a reproducible scenario, consequences, a corrective stage, and a recheck. Reconcile earlier findings; an old positive report does not automatically cover new rules.
+
+When outcomes change future opportunities or difficulty, inspect the [dynamic feedback analysis in 07](../07-game-balance-check/SKILL.md): causal links, reinforcing and balancing effects, delays, and repeated states. Trace combinations that can compound an advantage or worsen conditions after failure. Success in one cycle does not establish consistency across a sequence; compare intentional effects with the game's goals.
+
+Output: `review-summary.md` in `profile.paths.state_dir`, with reading scope, scenarios, matrix, findings, and limitations. A substantial section's author cannot perform its independent final review. Use a fresh-context Codex subagent under the [subagent review protocol](../00-game-preproduction/references/subagent-review.md); if unavailable, record the actual check and leave required independent review pending. The reviewer returns results to the coordinator without concurrently editing another author's specifications.
+
+Continue to [05](../05-game-consistency-check/SKILL.md) and corrections through [06](../06-game-design-system/SKILL.md). Repeat affected scenarios after fixes and check end-to-end coverage before architecture. Open material conflicts limit D0; paper analysis does not establish playtest success or gameplay balance.

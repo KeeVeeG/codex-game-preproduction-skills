@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "project": {
+    "name": null,
+    "experience": null,
+    "audience": null,
+    "genres": []
+  },
+  "scope": {
+    "objective": null,
+    "target_delivery": null,
+    "included": [],
+    "excluded": [],
+    "source": null
+  },
+  "game": {
+    "platforms": [],
+    "engine": null,
+    "engine_version": null,
+    "presentation": null,
+    "input": [],
+    "player_model": null,
+    "content_structure": null,
+    "languages": []
+  },
+  "features": {
+    "combat": "unknown",
+    "economy": "unknown",
+    "progression": "unknown",
+    "narrative": "unknown",
+    "spatial": "unknown",
+    "visual": "unknown",
+    "audio": "unknown",
+    "multiplayer": "unknown",
+    "localization": "unknown",
+    "procedural_generation": "unknown",
+    "ugc": "unknown",
+    "commerce": "unknown",
+    "live_ops": "unknown"
+  },
+  "feature_evidence": {},
+  "sources": {
+    "brief": [],
+    "baseline": [],
+    "scope": [],
+    "gdd": [],
+    "systems": [],
+    "mechanics": [],
+    "balance": [],
+    "narrative": [],
+    "levels": [],
+    "ux": [],
+    "accessibility_localization": [],
+    "art": [],
+    "environment": [],
+    "audio": [],
+    "visual_manifest": [],
+    "assets": [],
+    "content": [],
+    "architecture": [],
+    "decisions": [],
+    "controls": [],
+    "risks": [],
+    "epics": [],
+    "production": [],
+    "stories": [],
+    "qa": [],
+    "reviews": [],
+    "release": []
+  },
+  "authority": {
+    "source_order": [],
+    "decision_owners": {}
+  },
+  "paths": {
+    "state_dir": "docs/preproduction",
+    "reference_dir": "assets/art-references"
+  },
+  "review": {
+    "required": true,
+    "image_review_required": true,
+    "reviewer": "codex_subagent",
+    "policy_source": "Package default; preserve existing user decisions during profile setup"
+  }
+}

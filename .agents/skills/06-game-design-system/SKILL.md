@@ -1,0 +1,23 @@
+---
+name: 06-game-design-system
+description: Specify a selected game system through exact rules, states, formulas, neighboring contracts, and acceptance criteria. Preserve canonical documents and the agreed player experience.
+---
+
+# 06 — Specify a game system
+
+If the selected system includes seasonal events, rewards, service operations, or analytics, use the applicable [service contracts](../00-game-preproduction/references/service-and-release-planning.md). Calendars, expiry, and event accounting must match gameplay rules. This branch does not add live operations or data collection.
+
+Follow the [protocol](../00-game-preproduction/references/protocol.md), including its source-loading rules. Inputs through `profile.sources`: selected system, baseline, map 02, registry 05, findings from 04/05, current documents, and dependencies in both directions. Without a narrower assignment, select the first unready map node. Preserve the existing rule owner; for a new game, create the minimum canonical specification under the profile.
+
+1. Identify sufficient sections, gaps, contradictions, and consumers of the change. A small revision may need only the old/new rule, rationale, and regression scenarios. Before proposing a previously rejected option again, check decision history through [16](../16-game-propagate-design-change/SKILL.md) for changed assumptions. Respect the selected product rather than replacing it with a familiar genre pattern.
+2. State the purpose and intended experience, then rules, constraints, and a state table. For each transition, specify conditions, initiator, checks, simultaneous-event priority, data changes, feedback, and failure/recovery. Make dependencies on order, time, randomness, or player information explicit. Route software patterns and technology choices to architecture.
+3. For calculations, define expressions, variables, types, units, ranges, operation order, rounding, limits, and a worked example. Probabilistic rules need distributions, conditioning, retries, and a sufficiently defined randomness source. Separate chosen settings from invariants, hypotheses, and derived results. Reference a neighboring system's setting owner instead of duplicating the value.
+4. Define boundaries: inputs/outputs, state owner, repeated events, cancellation, save/load, and supported execution modes. Select edge cases from the mechanic: zero/maximum, unavailable targets, invalid actions, concurrency, failure/reset, participant changes, or service interruptions. Do not impose network modes on an offline single-player game. “Handle correctly” does not specify an outcome.
+5. Define the player-feedback contract for actions: when a choice becomes visible, input receives feedback, and the result becomes understandable; include meaningful durations, phases, and cancellation. For real-time play, address input delay, movement, camera, and recovery; for turn-based play, confirmation, visible consequences, and ordering; for narrative play, text pacing, skipping, and choices. Connect applicable visual, audio, and haptic channels to accessibility. Numerical targets and enjoyment remain hypotheses with future verification methods.
+6. Connect rules to their actual UX, text, space, audio, and asset consumers. Route space to 07b and narrative/onboarding to 07a. Give every material rule and formula a “given → action → result” criterion, including failure and interactions. D0 acceptance scenarios do not require an executable game test now.
+
+For multiphase turn or rule resolution, define the [turn boundary and product-supported undo behavior](../00-game-preproduction/references/conditional-design-checks.md), then send the relevant scenarios to 19. Do not add a genre feature solely for this check.
+
+Output: changes to canonical documents and data, closed/open findings, shared facts, and affected dependencies. Update the defining source before consumers. Parallel authors own non-overlapping files; the coordinator owns shared registries and logs.
+
+Completion: implementing the behavior does not require guessing essential rules, and remaining questions explicitly limit status. An independent systems or QA Codex subagent checks formulas, transitions, and criteria from the completed documents under the [subagent review protocol](../00-game-preproduction/references/subagent-review.md), without relying on the author's explanations. Then repeat [05](../05-game-consistency-check/SKILL.md), [07](../07-game-balance-check/SKILL.md) for quantitative changes, and [04](../04-game-review-all-gdds/SKILL.md) for end-to-end effects. An unfinished contract supplier sends work back to the relevant node in 02.

@@ -1,0 +1,475 @@
+{
+  "schema_version": 2,
+  "resource_path_base": "orchestrator_directory",
+  "scope": "D0 documentation and content planning for the agreed game scope; implementation is a separate task",
+  "orchestrator": "00-game-preproduction",
+  "stage_count": 31,
+  "stages": [
+    {
+      "id": "01",
+      "skill": "01-game-project-stage-detect",
+      "role": "Producer",
+      "after": [],
+      "mode": "primary",
+      "result": "Profile, canonical sources, and applicability/coverage matrix"
+    },
+    {
+      "id": "02",
+      "skill": "02-game-map-systems",
+      "role": "Systems designer",
+      "after": [
+        "01-game-project-stage-detect"
+      ],
+      "mode": "primary",
+      "result": "Systems, dependencies, and owners"
+    },
+    {
+      "id": "03",
+      "skill": "03-game-scope-check",
+      "role": "Producer",
+      "after": [
+        "02-game-map-systems"
+      ],
+      "mode": "primary",
+      "result": "Agreed scope and exclusions"
+    },
+    {
+      "id": "04",
+      "skill": "04-game-review-all-gdds",
+      "role": "Independent game designer",
+      "after": [
+        "03-game-scope-check"
+      ],
+      "mode": "primary",
+      "result": "Cross-system contradictions and gaps"
+    },
+    {
+      "id": "05",
+      "skill": "05-game-consistency-check",
+      "role": "Data reviewer",
+      "after": [
+        "04-game-review-all-gdds"
+      ],
+      "mode": "primary",
+      "result": "Fact registry and consistency"
+    },
+    {
+      "id": "06",
+      "skill": "06-game-design-system",
+      "role": "Game/systems designer",
+      "after": [
+        "05-game-consistency-check"
+      ],
+      "mode": "primary",
+      "result": "Mechanics, states, and control feel"
+    },
+    {
+      "id": "07",
+      "skill": "07-game-balance-check",
+      "role": "Economy/systems designer",
+      "after": [
+        "06-game-design-system"
+      ],
+      "mode": "primary",
+      "result": "Formulas, sensitivity, and risks"
+    },
+    {
+      "id": "07a",
+      "skill": "07a-game-narrative-design",
+      "role": "Narrative designer",
+      "after": [
+        "06-game-design-system"
+      ],
+      "mode": "primary",
+      "result": "Applicable narrative states, text, and onboarding"
+    },
+    {
+      "id": "07b",
+      "skill": "07b-game-level-design",
+      "role": "Level designer",
+      "after": [
+        "07-game-balance-check",
+        "07a-game-narrative-design"
+      ],
+      "mode": "primary",
+      "result": "Authored spaces/boards or procedural family contracts"
+    },
+    {
+      "id": "07c",
+      "skill": "07c-game-level-review",
+      "role": "Independent level designer / QA",
+      "after": [
+        "07b-game-level-design"
+      ],
+      "mode": "primary",
+      "result": "Independent review of applicable spatial design"
+    },
+    {
+      "id": "08",
+      "skill": "08-game-ux-design",
+      "role": "UX designer",
+      "after": [
+        "06-game-design-system",
+        "07b-game-level-design"
+      ],
+      "mode": "primary",
+      "result": "Flows, states, and interface"
+    },
+    {
+      "id": "09",
+      "skill": "09-game-ux-review",
+      "role": "Independent UX reviewer",
+      "after": [
+        "08-game-ux-design"
+      ],
+      "mode": "primary",
+      "result": "UX acceptance"
+    },
+    {
+      "id": "09a",
+      "skill": "09a-game-accessibility-localization",
+      "role": "Accessibility/localization specialist",
+      "after": [
+        "09-game-ux-review",
+        "07a-game-narrative-design"
+      ],
+      "mode": "primary",
+      "result": "Accessibility and the agreed language pipeline"
+    },
+    {
+      "id": "10",
+      "skill": "10-game-art-bible",
+      "role": "Art director",
+      "after": [
+        "06-game-design-system",
+        "07b-game-level-design"
+      ],
+      "mode": "primary",
+      "result": "Art, animation, and VFX rules"
+    },
+    {
+      "id": "10a",
+      "skill": "10a-game-environment-production",
+      "role": "Environment/technical artist",
+      "after": [
+        "10-game-art-bible",
+        "07c-game-level-review"
+      ],
+      "mode": "primary",
+      "result": "Environment kits and reproducible spatial assembly"
+    },
+    {
+      "id": "10b",
+      "skill": "10b-game-audio-design",
+      "role": "Audio designer",
+      "after": [
+        "10-game-art-bible",
+        "06-game-design-system",
+        "07a-game-narrative-design"
+      ],
+      "mode": "primary",
+      "result": "Audio events, music, mixing, and delivery"
+    },
+    {
+      "id": "10c",
+      "skill": "10c-game-visual-reference-pack",
+      "role": "Art director / concept artist / independent reviewer",
+      "after": [
+        "10-game-art-bible",
+        "10a-game-environment-production",
+        "07c-game-level-review",
+        "09a-game-accessibility-localization"
+      ],
+      "mode": "primary",
+      "result": "Actual visual references for required units, views, and states with version evidence"
+    },
+    {
+      "id": "11",
+      "skill": "11-game-asset-spec",
+      "role": "Technical artist",
+      "after": [
+        "10a-game-environment-production",
+        "10b-game-audio-design",
+        "09a-game-accessibility-localization",
+        "10c-game-visual-reference-pack"
+      ],
+      "mode": "primary",
+      "result": "Production unit specifications and audit"
+    },
+    {
+      "id": "11a",
+      "skill": "11a-game-content-coverage",
+      "role": "Content designer / QA",
+      "after": [
+        "11-game-asset-spec",
+        "07c-game-level-review",
+        "07a-game-narrative-design"
+      ],
+      "mode": "primary",
+      "result": "Every unit: source -> specification -> task -> QA"
+    },
+    {
+      "id": "12",
+      "skill": "12-game-create-architecture",
+      "role": "Technical director",
+      "after": [
+        "11a-game-content-coverage"
+      ],
+      "mode": "primary",
+      "result": "Architecture for the agreed product"
+    },
+    {
+      "id": "13",
+      "skill": "13-game-architecture-decision",
+      "role": "Technical director",
+      "after": [
+        "12-game-create-architecture"
+      ],
+      "mode": "primary",
+      "result": "Necessary ADRs; evidenced N_A when no new decisions apply"
+    },
+    {
+      "id": "14",
+      "skill": "14-game-architecture-review",
+      "role": "Independent technical reviewer",
+      "after": [
+        "13-game-architecture-decision"
+      ],
+      "mode": "primary",
+      "result": "Requirements coverage and technical consistency"
+    },
+    {
+      "id": "15",
+      "skill": "15-game-create-control-manifest",
+      "role": "Technical director",
+      "after": [
+        "14-game-architecture-review"
+      ],
+      "mode": "primary",
+      "result": "Implementation constraints"
+    },
+    {
+      "id": "15a",
+      "skill": "15a-game-technical-risk-review",
+      "role": "Technical reviewer / QA",
+      "after": [
+        "15-game-create-control-manifest"
+      ],
+      "mode": "primary",
+      "result": "Risks, trust boundaries, recovery, and future measurements"
+    },
+    {
+      "id": "16",
+      "skill": "16-game-propagate-design-change",
+      "role": "Coordinator",
+      "after": [],
+      "mode": "on_change",
+      "result": "Shared decision changes propagated across dependencies"
+    },
+    {
+      "id": "17",
+      "skill": "17-game-create-epics",
+      "role": "Producer / technical director",
+      "after": [
+        "15a-game-technical-risk-review",
+        "11a-game-content-coverage"
+      ],
+      "mode": "primary",
+      "result": "Epics for code and the entire content scope"
+    },
+    {
+      "id": "17a",
+      "skill": "17a-game-production-readiness",
+      "role": "Producer / discipline leads",
+      "after": [
+        "17-game-create-epics"
+      ],
+      "mode": "primary",
+      "result": "Capacity, dependencies, estimates, and delivery planning"
+    },
+    {
+      "id": "18",
+      "skill": "18-game-create-stories",
+      "role": "Discipline lead",
+      "after": [
+        "17a-game-production-readiness"
+      ],
+      "mode": "primary",
+      "result": "Tasks for every applicable discipline"
+    },
+    {
+      "id": "19",
+      "skill": "19-game-qa-plan",
+      "role": "QA lead",
+      "after": [
+        "18-game-create-stories"
+      ],
+      "mode": "primary",
+      "result": "Verification plans and future evidence"
+    },
+    {
+      "id": "20",
+      "skill": "20-game-story-readiness",
+      "role": "Independent QA / implementer",
+      "after": [
+        "19-game-qa-plan"
+      ],
+      "mode": "primary",
+      "result": "Readiness of every task"
+    },
+    {
+      "id": "21",
+      "skill": "21-game-gate-check",
+      "role": "Independent reviewers / coordinator",
+      "after": [
+        "20-game-story-readiness"
+      ],
+      "mode": "primary",
+      "result": "Current D0 verdict for the entire agreed scope"
+    }
+  ],
+  "rechecks": [
+    {
+      "trigger": "05 creates or changes the fact registry after the first 04",
+      "skills": [
+        "04-game-review-all-gdds"
+      ],
+      "required_before": [
+        "12-game-create-architecture"
+      ]
+    },
+    {
+      "trigger": "A shared rule or data changes at any stage: preserve the baseline, propagate impacts, and invalidate dependent evidence",
+      "skills": [
+        "16-game-propagate-design-change",
+        "04-game-review-all-gdds",
+        "05-game-consistency-check"
+      ],
+      "required_before": [
+        "17-game-create-epics",
+        "21-game-gate-check"
+      ]
+    },
+    {
+      "trigger": "10a or UX/art/mechanics changes spatial design constraints",
+      "skills": [
+        "07c-game-level-review",
+        "11a-game-content-coverage"
+      ],
+      "required_before": [
+        "12-game-create-architecture",
+        "21-game-gate-check"
+      ]
+    },
+    {
+      "trigger": "Material in a reviewed domain changes after independent review",
+      "skills": [
+        "07c-game-level-review",
+        "09-game-ux-review",
+        "09a-game-accessibility-localization",
+        "14-game-architecture-review",
+        "15a-game-technical-risk-review",
+        "20-game-story-readiness"
+      ],
+      "selection": "Affected checks only; independent acceptance must match current sources",
+      "required_before": [
+        "21-game-gate-check"
+      ]
+    },
+    {
+      "trigger": "18 and 19 complete: recheck every unit against actual tasks and QA",
+      "skills": [
+        "11a-game-content-coverage"
+      ],
+      "required_before": [
+        "20-game-story-readiness",
+        "21-game-gate-check"
+      ]
+    },
+    {
+      "trigger": "Task scope, effort, capacity, or dependencies change after 18",
+      "skills": [
+        "17a-game-production-readiness"
+      ],
+      "required_before": [
+        "20-game-story-readiness",
+        "21-game-gate-check"
+      ]
+    },
+    {
+      "trigger": "Current cross-system checks are required before 17 and final 21; current evidence may be reused",
+      "skills": [
+        "04-game-review-all-gdds",
+        "05-game-consistency-check"
+      ],
+      "required_before": [
+        "17-game-create-epics",
+        "21-game-gate-check"
+      ]
+    },
+    {
+      "trigger": "Appearance, variants, states, art direction, or spatial constraints change: update affected images and independent reviews",
+      "skills": [
+        "10c-game-visual-reference-pack",
+        "11-game-asset-spec",
+        "11a-game-content-coverage"
+      ],
+      "required_before": [
+        "21-game-gate-check"
+      ]
+    },
+    {
+      "trigger": "07b changes the sequence of challenges, resources, or recovery in authored routes/boards or generator constraints",
+      "skills": [
+        "07-game-balance-check"
+      ],
+      "selection": "Applicable difficulty/resource calculations after spatial design and before 07c; shared data has one writer",
+      "required_before": [
+        "07c-game-level-review",
+        "21-game-gate-check"
+      ]
+    }
+  ],
+  "completion": {
+    "coverage": "references/coverage.md",
+    "matrix": "<profile.paths.state_dir>/coverage-matrix.md",
+    "gate": "21-game-gate-check",
+    "requires_current_independent_evidence": true,
+    "requires_current_subagent_reviews": "profile.review.required",
+    "requires_per_image_subagent_reviews": "profile.review.image_review_required"
+  },
+  "applicability": "Evaluate every stage using the project profile. Verified N_A satisfies a dependency; unknown or missing required evidence does not. Partial applicability retains required work.",
+  "profile": "references/project-profile.md",
+  "subagent_reviews": {
+    "protocol": "references/subagent-review.md",
+    "checkpoints": [
+      {
+        "id": "MR-DESIGN",
+        "after": "11a-game-content-coverage",
+        "occurrence": "first full design/content pass"
+      },
+      {
+        "id": "MR-TECH",
+        "after": "15a-game-technical-risk-review"
+      },
+      {
+        "id": "MR-HANDOFF",
+        "after": "20-game-story-readiness",
+        "before": "21-game-gate-check"
+      }
+    ],
+    "on_material_change": "Invalidate affected review scope and repeat independent Codex subagent consultation. Reuse current evidence only for unchanged sources and actual coverage.",
+    "image_reviews": {
+      "stage": "10c-game-visual-reference-pack",
+      "scope": "Every used existing image and every new generated or artistically edited candidate/version, before acceptance; unused historical archive excluded",
+      "requires_actual_visual_input": true,
+      "transport_script": "scripts/prepare-review-images.py",
+      "transport_scope": "Technical copies map to the canonical source; they do not create recursive artistic-version reviews",
+      "timing": "During 10c before acceptance of visual deliverables in 11; independent nonvisual work may continue",
+      "reviewer_source": "profile.review.reviewer"
+    },
+    "reviewer_source": "profile.review.reviewer",
+    "reviewer": "codex_subagent",
+    "requires_fresh_context": true
+  }
+}
